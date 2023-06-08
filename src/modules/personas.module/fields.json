@@ -1,0 +1,103 @@
+[
+  {
+   "type": "group",
+   "id": "f0c776d9-7fd8-6bee-890d-012722d46feb",
+   "label": "Personas",
+   "children": [
+    {
+     "type": "text",
+     "id": "ecf7aad7-8222-a944-0f0b-15b7fbe940fd",
+     "validation_regex": "",
+     "label": "Title",
+     "name": "title",
+     "default": "Data Scientist or ML Scientist"
+    },
+    {
+     "type": "text",
+     "id": "7642c45d-f7dc-61cd-39b0-76692533c4c4",
+     "validation_regex": "",
+     "label": "Dropwdown Text",
+     "name": "dropwdown_text",
+     "default": "I am a Data Scientist or ML Scientist"
+    },
+    {
+     "type": "group",
+     "id": "5cbbecf5-0ab0-4d86-d5e0-1414036d70d0",
+     "label": "Rows",
+     "children": [
+      {
+       "type": "text",
+       "id": "44c389de-eb79-0c94-bdc0-13311ec880e5",
+       "validation_regex": "",
+       "label": "Title",
+       "name": "title",
+       "default": "Model Discovery"
+      },
+      {
+       "type": "text",
+       "id": "c103d061-f762-f02c-5c00-03a5e5ed33ed",
+       "validation_regex": "",
+       "label": "Paragraph",
+       "name": "paragraph",
+       "default": "Save time and effort by discovering existing models to reuse instead of building new ones from scratch. Model Catalog is your team's centralized source for ML assets."
+      },
+      {
+       "type": "image",
+       "id": "b4db9ba8-2cf7-329a-e5c7-2100689360df",
+       "default": {
+        "size_type": "auto",
+        "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/Model%20Catalog%20-%20Hompepage.jpg",
+        "alt": "Model Catalog - Hompepage",
+        "loading": "lazy",
+        "width": 996,
+        "height": 623,
+        "max_width": 996,
+        "max_height": 623
+       },
+       "resizable": true,
+       "responsive": true,
+       "show_loading": false,
+       "label": "Image",
+       "name": "image"
+      }
+     ],
+     "name": "rows",
+     "default": {
+      "title": "Model Discovery",
+      "paragraph": "Save time and effort by discovering existing models to reuse instead of building new ones from scratch. Model Catalog is your team's centralized source for ML assets.",
+      "image": {
+       "size_type": "auto",
+       "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/Model%20Catalog%20-%20Hompepage.jpg",
+       "alt": "Model Catalog - Hompepage",
+       "loading": "lazy",
+       "width": 996,
+       "height": 623,
+       "max_width": 996,
+       "max_height": 623
+      }
+     },
+     "occurrence": {}
+    }
+   ],
+   "name": "personas",
+   "default": {
+    "title": "Data Scientist or ML Scientist",
+    "dropwdown_text": "I am a Data Scientist or ML Scientist",
+    "rows": {
+     "title": "Model Discovery",
+     "paragraph": "Save time and effort by discovering existing models to reuse instead of building new ones from scratch. Model Catalog is your team's centralized source for ML assets.",
+     "image": {
+      "size_type": "auto",
+      "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/Model%20Catalog%20-%20Hompepage.jpg",
+      "alt": "Model Catalog - Hompepage",
+      "loading": "lazy",
+      "width": 996,
+      "height": 623,
+      "max_width": 996,
+      "max_height": 623
+     }
+    }
+   },
+   "occurrence": {}
+  }
+ ]

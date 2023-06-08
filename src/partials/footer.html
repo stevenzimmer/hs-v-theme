@@ -1,0 +1,49 @@
+<!--
+    templateType: global_partial
+    label: Page Footer
+    isAvailableForNewContent: false
+-->
+<!-- Begin partial -->
+
+
+<footer class="bg-v-offwhite pt-[100px] pb-[50px]">
+  <div class="container px-6">
+    <div class="flex flex-wrap w-full justify-between">
+      <div class="w-full lg:w-1/6 mb-6 lg:mb-0">
+        {% module "footer_logo" path="@hubspot/logo", link="https://www.verta.ai/" label="Footer logo", img={src="https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/VertaLogo_purple.png", width= 110, override_inherited_src=true, alt="Verta Logo footer" } %}
+      </div>
+      <div class="w-full  lg:w-2/3">
+        {% module "Footer" path="./../modules/footer", label="Footer"  %}
+      </div> 
+      <div class="w-full lg:w-1/6">
+        <div class="social-wrapper">
+          <a class="flex p3 fw-500 icon-link verta-light-grey" href="https://join.slack.com/t/verta-community/shared_invite/zt-cdwlgw8j-XXuI2~mPvfhH_5ukG4P5Og"><img src="https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/icon-social-slack.svg" class="mr-2" alt="Slack Icon" width="20px" height="auto">Community</a>
+          <div class="flex items-center gap-x-3 mt-[30px] pt-[30px] icon-row-wrapper border-t-2">
+            <a class="icon-link" href="https://www.youtube.com/channel/UClJKA9nhsFNpxK5ACRKjzbA"><img src="https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/social-icon-youtube.svg" alt="YouTube Icon" width="20px" height="auto"></a>
+            <a class="icon-link" href="https://twitter.com/VertaAI"><img src="https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/icon-social-twitter.svg" alt="Twitter Icon" width="20px" height="auto"></a>
+            <a class="icon-link" href="https://www.linkedin.com/company/vertaai"><img src="https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/icon-social-linkedin.svg" alt="LinkedIn Icon" width="20px" height="auto"></a>
+            <a class="icon-link" href="https://github.com/VertaAI"><img src="https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/icon-social-github.svg" alt="GitHub Icon" width="20px" height="auto"></a>
+            <a class="icon-link" href="https://medium.com/vertaai"><img src="https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/icon-social-medium.svg" alt="Medium Icon" width="20px" height="auto"></a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="flex items-center mt-[80px] tos-wrapper">
+      <p class="p3 mtb-0 verta-dark-grey">Copyright &copy; {{year}} Verta</p>
+      <p class="p3 mtb-0 mlr-10 verta-dark-grey spacer">
+        |
+      </p>
+      <a class="p3 mtb-0 verta-dark-grey" href="https://www.verta.ai/terms-of-service">Terms of Service</a>
+      <p class="p3 mtb-0 mlr-10 verta-dark-grey spacer">
+        |
+      </p>
+      <a class="p3 mtb-0 verta-dark-grey" href="https://www.verta.ai/privacy-policy">Privacy Policy</a>
+      <p class="p3 mtb-0 mlr-10 verta-dark-grey spacer">
+        |
+      </p>
+      <a class="p3 mtb-0 verta-dark-grey" href="https://www.verta.ai/security">Security</a>
+    </div>
+  </div>
+</footer>
+<!-- End partial -->

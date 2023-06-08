@@ -1,0 +1,106 @@
+[
+  {
+   "children": [
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "id": "68bf184e-9dc7-3df0-8bb1-2169c874de02",
+     "label": "Icon",
+     "locked": false,
+     "name": "icon",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "allow_new_line": false,
+     "default": "Experiment",
+     "display_width": null,
+     "id": "1f35b8e6-0953-3018-45d7-45aec73d5f6d",
+     "label": "Title",
+     "locked": false,
+     "name": "title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "allow_new_line": false,
+     "default": "Track your growing portfolio of models, experiments, and versions with confidence",
+     "display_width": null,
+     "id": "51dd26ca-2ed9-78d0-b3fd-afdb5950dd2e",
+     "label": "Paragraph",
+     "locked": false,
+     "name": "paragraph",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    }
+   ],
+   "default": [
+    {
+     "icon": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "title": "Experiment",
+     "paragraph": "Track your growing portfolio of models, experiments, and versions with confidence"
+    },
+    {
+     "icon": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "title": "Experiment",
+     "paragraph": "Track your growing portfolio of models, experiments, and versions with confidence"
+    },
+    {
+     "icon": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "title": "Experiment",
+     "paragraph": "Track your growing portfolio of models, experiments, and versions with confidence"
+    },
+    {
+     "icon": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "title": "Experiment",
+     "paragraph": "Track your growing portfolio of models, experiments, and versions with confidence"
+    }
+   ],
+   "display_width": null,
+   "expanded": false,
+   "id": "ac1ee4c0-c88d-0547-8b1d-b259cbec8904",
+   "label": "Feature",
+   "locked": false,
+   "name": "feature",
+   "occurrence": {
+    "default": 4,
+    "max": 4,
+    "sorting_label_field": "1f35b8e6-0953-3018-45d7-45aec73d5f6d"
+   },
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  }
+ ]

@@ -1,0 +1,37 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: false
+-->
+<!-- Begin partial -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <meta name="description" content="{{ content.meta_description }}">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    {{ require_css(get_asset_url("../../01-coded-files/css/main.css")) }}
+    {{ require_css(get_asset_url("../assets/css/styles.css")) }}
+
+    {{ require_css(get_asset_url("../../01-coded-files/css/form.css")) }}
+    {{ require_js(get_asset_url("../js/main.js")) }}
+
+    {{ standard_header_includes }}
+  </head>
+  <body>
+    <div class="body-wrapper {{builtin_body_classes }}">
+      {% block header %}
+        {% global_partial path="../partials/header.html" %}
+      {% endblock header %}
+      
+      {% block body %}
+        <!-- Nothing to see here -->
+      {% endblock body %}
+      
+      {% global_partial path="../partials/footer.html" %}
+      </div>
+    {{ standard_footer_includes }}
+  </body>
+</html>
+<!-- End partial -->

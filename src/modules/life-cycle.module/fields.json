@@ -1,0 +1,76 @@
+[ {
+  "id" : "f807cba2-5b48-fb7d-dc8b-f77a1b7aee4c",
+  "name" : "headline",
+  "display_width" : null,
+  "label" : "Headline",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What Verta Does"
+}, {
+  "id" : "e2be39e7-2547-1193-cecb-261ddd801275",
+  "name" : "paragraph",
+  "display_width" : null,
+  "label" : "Paragraph",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Verta supports what you're already doing by adding deploy, operate, and monitor to lorem ipsum your dolars more effectively."
+}, {
+  "id" : "c1d9279d-58bd-e0f8-259c-64ce6da7c77e",
+  "name" : "dropdown_item",
+  "display_width" : null,
+  "label" : "Dropdown Item",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : 4,
+    "sorting_label_field" : "2b6752c9-0aaa-c31e-75bf-d393bea4fd57",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "2b6752c9-0aaa-c31e-75bf-d393bea4fd57",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "23f6fd20-938f-f335-d7a4-b87c3aa96b73",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ { }, { }, { }, { } ]
+}, {
+  "id" : "f42d82c8-90c9-fc01-585e-56873bf6f4e0",
+  "name" : "graphic_title",
+  "display_width" : null,
+  "label" : "Graphic Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

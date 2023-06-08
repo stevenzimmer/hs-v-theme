@@ -1,0 +1,76 @@
+[
+  {
+   "allow_new_line": false,
+   "default": "Hear from Our Clients",
+   "display_width": null,
+   "id": "16b9d0b8-0556-937f-8522-b979b3d8a764",
+   "label": "Eyebrow",
+   "locked": false,
+   "name": "eyebrow",
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
+  },
+  {
+   "default": {
+    "size_type": "auto",
+    "src": "https://f.hubspotusercontent20.net/hubfs/5747173/02-template-contents/homepage/video-thumbnail.png",
+    "alt": "video-thumbnail",
+    "loading": "lazy",
+    "width": 458,
+    "height": 287,
+    "max_width": 458,
+    "max_height": 287
+   },
+   "display_width": null,
+   "id": "8101f408-24b1-76db-5343-f504c22f6762",
+   "label": "Thumbnail Image",
+   "locked": false,
+   "name": "thumbnail_image",
+   "required": false,
+   "resizable": true,
+   "responsive": true,
+   "show_loading": false,
+   "type": "image"
+  },
+  {
+   "allow_new_line": false,
+   "default": "Before Verta, classifying our entire data universe would take days. Verta helped us redo our entire universe in 20 minutes.”",
+   "display_width": null,
+   "id": "67898f47-1f6e-18af-2c48-5b4b4a4f125d",
+   "label": "Quote",
+   "locked": false,
+   "name": "quote",
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
+  },
+  {
+   "allow_new_line": false,
+   "default": "Jenn Flynn, Principal Data Scientist at<br>LeadCrunch",
+   "display_width": null,
+   "id": "476f8c0b-b9ed-fef9-3bb8-60dfcfd48023",
+   "label": "Quote Attribute",
+   "locked": false,
+   "name": "quote_attribute",
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
+  },
+  {
+   "allow_new_line": false,
+   "default": "373993712",
+   "display_width": null,
+   "id": "dc40378c-db4c-1dc7-4f77-4e9472202ddc",
+   "label": "Vimeo ID",
+   "locked": false,
+   "name": "vimeo_id",
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
+  }
+ ]

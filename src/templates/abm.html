@@ -1,0 +1,390 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: Account Based Marketing
+-->
+{% extends "../layouts/base.html" %}
+{% require_css %}
+    <style>
+      .footer-container .menu-container {
+        background-color: #ffffff;
+      }
+    </style>
+  {% end_require_css %}
+{% block body %}
+    <main class="">
+{% dnd_area "ABM Sections" 
+    label="Sections"
+%}
+
+{% dnd_section
+  full_width=false,
+  max_width=1090,
+%}
+  {% dnd_column
+    offset=0,
+    width=6,
+    padding={
+      "default" : {
+        "bottom" : "40px",
+        "left" : "0px",
+        "right" : "0px",
+        "top" : "40px"
+      },
+      "mobile" : {
+        "bottom" : "40px",
+        "left" : "25px",
+        "right" : "25px",
+        "top" : "40px"
+      }
+    }
+  %}
+    {% dnd_row
+      margin={
+        "default" : {
+          "bottom" : "20px"
+        }
+      }
+    %}
+      {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+        {% module_attribute "html" %}
+          <h1 style="font-size: 46px; color: #2f2f35; line-height: 52px;">AI is transforming the insurance industry</h1>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% dnd_row
+      margin={
+        "default" : {
+          "bottom" : "20px"
+        }
+      }
+    %}
+      {% dnd_column
+        offset=0,
+        width=12
+      %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/rich_text",
+            offset=0,
+            width=12
+          %}
+            {% module_attribute "html" %}
+              <p style="font-size: 20px; color: #4d4d50; line-height: 28px; font-weight: 400;">Advances in AI offer insurers the promise of growth through innovative new products, cost reductions from new efficiencies, and risk mitigating thanks to improved analytics and modeling. But both established carriers and cloud-native insurtech startups face challenges in realizing AI’s full potential, even as AI regulations create new risks and costs.</p>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/divider",
+            offset=0,
+            width=12,
+            color={
+              "color" : "#000000",
+              "css" : "rgba(0, 0, 0, 0%)",
+              "opacity" : 0
+            },
+            height=1,
+            show_padding=true
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/rich_text",
+            offset=0,
+            width=12
+          %}
+            {% module_attribute "html" %}
+              <p style="font-size: 20px; color: #4d4d50; line-height: 28px; font-weight: 400;"><span><span style="font-weight: bold;">On this page you will find resources to help you understand the current AI/ML landscape, prepare for coming disruptions, and get started on your Operational AI journey.</span></span><a href="https://blog.verta.ai/ready-for-ai-regulations" class="text-black pb-1 border-b-2 border-black" style="font-size: 16px; color: #4d4d50; line-height: 24px; font-weight: bold;"></a></p>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+  {% dnd_column
+    offset=6,
+    width=6,
+    background_image={
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "image_url" : "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/abm-template/shutterstock_274206875%201.jpg"
+    },
+    padding={
+      "mobile" : {
+        "bottom" : "160px",
+        "top" : "160px"
+      }
+    }
+  %}
+
+  {% end_dnd_column %}
+{% end_dnd_section %}
+
+
+{% include_dnd_partial path='../partials/dnd_two-col-swap.html' context={
+  "bgColor": "#ffffff",
+  "section_padding": {
+    "default" : {
+      "bottom" : "80px",
+      "top" : "80px"
+    }
+  },
+  "vertical_alignment": "",
+  "header": ' <h2 style="font-size: 24px; color: #2f2f35; line-height: 28px;">Cross the AI Chasm</h2>',
+  "body":   '<p style="margin-bottom: 10px;font-size: 16px; color: #4d4d50; line-height: 1.5; font-weight: 400;">What does it mean to cross the AI chasm? Companies like Google and Amazon integrate AI into every customer experience and business process. In the insurance industry, incumbents and startups alike face challenges crossing this chasm:</p><ul style="margin-bottom: 10px; line-height: 1.25;">
+      <li style="font-size: 20px; color: #4d4d50; line-height: 1.15; font-weight: 400; margin-bottom: 5px;"><span style="font-size: 16px;"><strong>Established players</strong> that have focused their AI initiatives on supporting analytical (batch) use cases now need to enable and scale real-time capabilities.</span></li>
+      <li style="font-size: 20px; color: #4d4d50; line-height: 1.15; font-weight: 400;"><span style="font-size: 16px;"><strong>Insurtech startups</strong> have built tech stacks that make it easier to enable real-time use cases, but their challenge is one of scale: how to build their offerings and grow market share with lean operations supported by small ML teams.</span><br><span style="font-size: 16px;"></span></li>
+    </ul>
+    <p style="font-size: 16px; color: #4d4d50; line-height: 1.5; font-weight: 400;">Read Verta’s <span style="font-weight: bold;">Guide to Operational AI for Insurance</span> to learn how every insurer can cross the AI chasm successfully by adopting an Operational AI mindset.</p>',
+  "cta_text": "Read the Guide",
+  "cta_link": "https://info.verta.ai/en-us/guide-operational-ai-insurance",
+  "img": {
+    "alt" : "A guide to operational insurance report thumbnail",
+    "height" : 888,
+    "loading" : "lazy",
+    "max_height" : 420,
+    "max_width" : 390,
+    "size_type" : "auto_custom_max",
+    "src" : "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/abm-template/Group%204239.png",
+    "width" : 825
+  },
+} %}
+
+
+
+{% dnd_section
+  background_color="rgba(244, 244, 250, 1)",
+  padding={
+    "default" : {
+      "bottom" : "40px",
+      "top" : "80px"
+    }
+  },
+  max_width=1090,
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row 
+        padding={
+          "default" : {
+              "left": 0,
+              "right": 0
+          },
+          "mobile" : {
+              "left": 25,
+              "right": 25
+          } 
+      }
+    %}
+      {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+        {% module_attribute "html" %}
+          <h2 style="text-align: center; line-height: 1.25; font-weight: 500;"><span style="font-size: 28px; color: #2f2f35; font-weight: normal;">Check out our most recent blogs on the topic</span></h2>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+
+
+{% include_dnd_partial path='../partials/dnd_two-col.html' context={
+  "bgColor": "rgba(244, 244, 250, 1)",
+  "section_padding": {
+    "default" : {
+      "bottom" : "40px"
+    }
+  },
+  "vertical_alignment": "MIDDLE",
+  "header": '<h3 style="font-size: 24px; color: #2f2f35; line-height: 28px;">Prepare for upcoming AI Regulations</h3>',
+  "body":   '<p style="font-size: 16px; color: #4d4d50; line-height: 1.5; font-weight: 400;">The American Data Privacy and Protection Act (ADPPA) bill imposes new requirements (and creates new liabilities) for insurers and other companies that use machine learning and AI, including calling for “algorithm impact assessments” and “algorithm design evaluations.” Verta’s Model management tools help companies track and report on how their models were created, trained, deployed, and monitored — ensuring compliance and mitigating liabilities.</p>',
+  "cta_text": "Learn about the ADPPA",
+  "cta_link": "https://blog.verta.ai/ready-for-ai-regulations",
+  "img": {
+    "alt" : "Prepare for New AI Regulations image",
+    "height" : 341,
+    "max_height" : 171,
+    "max_width" : 300,
+    "size_type" : "auto_custom_max",
+    "src" : "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/abm-template/Insurtech-ADPPA.jpg",
+    "width" : 600
+  },
+} %}
+
+{% include_dnd_partial path='../partials/dnd_two-col.html' context={
+  "bgColor": "rgba(244, 244, 250, 1)",
+  "section_padding": {
+    "default" : {
+      "bottom" : "80px",
+      "top" : "40px"
+    }
+  },
+  "vertical_alignment": "MIDDLE",
+  "header": '<h3 style="font-size: 24px; color: #2f2f35; line-height: 28px;">A Blueprint for an AI Bill of Rights</h3>',
+  "body":   '<p style="font-size: 16px; color: #4d4d50; line-height: 1.5; font-weight: 400;">The White House Office of Science and Technology Policy (OSTP) has released a “Blueprint for an AI Bill of Rights,” which aims to address challenges posed by uses of “technology, data and automated systems” that could impinge on the rights of the American public.</p>',
+  "cta_text": "Read the blog post",
+  "cta_link": "https://blog.verta.ai/blueprint-ai-bill-of-rights",
+  "img": {
+    "alt" : "Prepare for an AI Bill of Rights Image",
+    "max_height" : 171,
+    "max_width" : 300,
+    "size_type" : "auto_custom_max",
+    "src" : "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/abm-template/Insurtech-Blueprint.jpg"
+  },
+} %}
+
+{#  #}
+{% include_dnd_partial path='../partials/dnd_two-col-swap.html' context={
+  "bgColor": "#ffffff",
+  "section_padding": {
+    "default" : {
+      "bottom" : "80px",
+      "top" : "80px"
+    }
+  },
+  "vertical_alignment": "",
+  "header": ' <h2 style="font-size: 24px; color: #2f2f35; line-height: 28px;">Learn what makes Verta “cool”</h2>',
+  "body":   '<p style="font-size: 16px; color: #4d4d50; line-height: 1.5; font-weight: 400;">
+  In the Gartner Cool Vendor in AI Core Technologies report, Verta is recognized as a leading vendor in solutions for managing and scaling AI initiatives. Verta’s Model Catalog was highlighted for enabling the model reproducibility, traceability and auditability that are needed to comply with current and upcoming regulations. Insurance and fintech companies are increasingly turning to Verta to automate delivery, increase availability, scale workflows and ensure compliance in AI.</p>',
+  "cta_text": "Read the Gartner report",
+  "cta_link": "https://info.verta.ai/gartner-coolvendor",
+  "img": {
+    "alt" : "gartner cool vendor 2022",
+    "height" : 336,
+    "max_height" : 232,
+    "max_width" : 260,
+    "size_type" : "auto_custom_max",
+    "src" : "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/02-template-contents/homepage/gartner_cool_vendor_2022%201.png",
+    "width" : 376
+  },
+} %}
+
+
+
+
+
+
+
+{% include_dnd_partial path='../partials/dnd_two-col.html' context={
+  "bgColor": "#ffffff",
+  "section_padding":{
+    "default" : {
+      "bottom" : "80px",
+      "top" : "80px"
+    }
+  },
+  "vertical_alignment": "",
+  "header": '<h2 style="font-size: 24px; color: #2f2f35; line-height: 28px;">State of MLOps Research Report</h2>',
+  "body":   '<p style="font-size: 16px; color: #4d4d50; line-height: 24px; font-weight: 400;margin-bottom: 6px;">The State of MLOps study from Verta Insights explores trends, best practices and opportunities shaping the industry — from model experimentation and deployment through real-time safe operations. Importantly, the study revealed differences in how successful organizations approach ML versus laggards.</p><p style="margin-bottom: 6px;font-size: 16px; color: #4d4d50; line-height: 24px; font-weight: 400;">Key topics include:</p><ul style="font-size: 16px; color: #4d4d50; line-height: 24px; font-weight: 400;">
+  <li style="margin-bottom: 5px;"><strong>Real-time explosion</strong>: Real-time use cases set for rapid growth</li>
+  <li style="margin-bottom: 5px;"><strong>Investment priorities</strong>: How companies are building their Operational AI tech stack</li>
+  <li><strong>Leaders vs Laggards</strong>: How successful companies are outperforming peers that have focused their AI initiatives on supporting analytical (batch) use cases now need to enable and scale real-time capabilities.</li>
+  </ul>',
+  "cta_text": "Access the report",
+  "cta_link": "https://info.verta.ai/report-state-of-mlops-2022",
+  "img": {
+    "alt" : "State of MLOps Research Report cover graphic",
+    "max_height" : 424,
+    "max_width" : 500,
+    "size_type" : "auto_custom_max",
+    "src" : "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/abm-template/Group%204240.png"
+  },
+} %}
+
+{# Split Section #}
+{% dnd_section 
+    padding={
+        "default" : {
+            "bottom" : "80px",
+            "top" : "80px"
+        }
+    }
+%}
+    {% dnd_module "split_section" path="../modules/split-section", label="Split Section", overrideable=True, no_wrapper=True %}
+    {% end_dnd_module %}
+{% end_dnd_section %}
+
+
+
+{# Profile BOX #}
+{% dnd_section %}
+    {% dnd_module "profile_box" path="../modules/profile-box", label="Profile Box", overrideable=True, no_wrapper=True %}
+    {% end_dnd_module %}
+{% end_dnd_section %}
+
+
+
+
+
+
+    {# PAGE FOOTER #}
+    {% dnd_section
+        max_width=1090,
+        background_color="#F4F4FA",
+        padding={
+          "default" : {
+            "top": "200px",
+            "bottom": "80px"
+          },
+          "mobile": {
+            "top": "100px",
+            "left": "25px",
+            "right": "25px"
+          }
+        }
+    %}
+        {% dnd_column %}
+
+            {% dnd_row 
+                margin={
+                    "bottom": 20
+                }
+            %}
+                {% dnd_module path="@hubspot/rich_text" %}
+                    {% module_attribute "html"%}
+                        <h2 class="text-[32px] sm:text-[48px] md:text-[70px] leading-none" style="color: #2F2F35; text-align: center; font-weight: 500">Request a complimentary Operational AI Readiness Assessment</h2>
+                    {% end_module_attribute %}
+                {% end_dnd_module %}
+
+            {% end_dnd_row %}
+            {% dnd_row 
+                margin={
+                    "bottom": 40
+                }
+            %}
+
+                {% dnd_module  path="@hubspot/rich_text" %}
+                    {% module_attribute "html"%}
+                        <p style="font-size: 20px; color: #4D4D50; line-height: 28px;font-weight: 400; text-align: center">Contact Verta today to inquire about a complimentary Operational AI <br />Readiness Assessment and recommendations for crossing the AI chasm.</p>
+                    {% end_module_attribute %}
+                {% end_dnd_module %}
+
+            {% end_dnd_row %}
+           
+            {% dnd_row %}
+
+                {% dnd_module  path="@hubspot/rich_text", horizontal_alignment="CENTER" %}
+                    {% module_attribute "html"%}
+                        <a href="https://www.verta.ai/contact-us" class="btn btn-secondary filled-blue">Get in touch</a>
+                    {% end_module_attribute %}
+                {% end_dnd_module %}
+
+            {% end_dnd_row %} 
+
+        {% end_dnd_column %}
+        
+    {% end_dnd_section %}
+
+{% end_dnd_area %}
+    </main>
+{% endblock body %}

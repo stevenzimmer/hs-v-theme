@@ -1,0 +1,28 @@
+<!-- module html  -->
+<aside class="py-12 px-8 rounded bg-[#f7f8f8]">
+  <div class="mb-6">
+    <p class="text-[24px] font-500 text-v-black">{{ module.learn_more_box_header }}</p>
+  </div>
+
+  {% for item in module.learn_more_links %}
+    {% set href = item.learn_more_box_link.url.href %}
+      {% if item.learn_more_box_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+      {% endif %}
+  <div class="flex items-center relative group mb-6 last:mb-0">
+    <a href="{{ href }}"
+       {% if item.learn_more_box_link.open_in_new_tab %}target="_blank"{% endif %}
+       {% if item.learn_more_box_link.rel %}rel="{{ item.learn_more_box_link.rel }}"{% endif %}
+       class="absolute w-full h-full inset-0 z-10"></a>
+    <div class="w-6">
+      <svg class="group-hover:translate-x-0.5 transition-transform duration-200" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.4845 10.9469C19.9726 10.4587 19.9726 9.66726 19.4845 9.1791L11.5295 1.22415C11.0414 0.735998 10.2499 0.735998 9.76175 1.22415C9.2736 1.71231 9.2736 2.50377 9.76175 2.99192L16.8328 10.063L9.76175 17.1341C9.2736 17.6222 9.2736 18.4137 9.76175 18.9018C10.2499 19.39 11.0414 19.39 11.5295 18.9018L19.4845 10.9469ZM0 11.313H18.6006V8.81299H0V11.313Z" fill="#504DB8"/>
+      </svg>
+    </div>
+    <div class="px-3">
+      <p class="text-v-black text-[20px] group-hover:text-v-purple group-hover:underline">{{ item.learn_more_box_link_text }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</aside>
+

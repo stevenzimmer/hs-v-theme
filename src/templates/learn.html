@@ -1,0 +1,162 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: Learn
+-->
+{% extends "../layouts/base.html" %}
+{% block body %}
+  <main class="bg-white">
+    <div class="angled-hero">
+      <div class="container py-6">
+      {% dnd_area "header_section" "dnd_area"
+      label="Header section"
+    %}
+      {% dnd_section %}
+        {% dnd_column %}
+          
+          {% dnd_row %}
+
+            {% dnd_module "Learn Header" path="@hubspot/rich_text" %}
+              {% module_attribute "html"%}
+                <h1 style="color: #ffffff;text-align: center;font-size: 46px">Learn more about Verta’s powerful AI platform</h1>
+            {% end_module_attribute %}
+            {% end_dnd_module %}
+
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+    {% end_dnd_area %}
+      </div>
+   
+    <div class="container">
+    <div class="flex justify-center">
+      <div class="w-11/12 lg:w-10/12">
+      <div class="p-12 lg:p-20 bg-v-offwhite rounded-xl mb-20">
+      {% dnd_area "dnd_area"
+        "main_section"
+        label="Main section"
+      %}
+        {% dnd_section %}
+          {% dnd_column %}
+            
+            {% dnd_row %}
+  
+              {% dnd_module "featured_card" path="../modules/featured-card", label="Featured Card", overrideable=True, no_wrapper=True %}
+              {% end_dnd_module %}
+  
+            {% end_dnd_row %}
+            {% dnd_row %}
+  
+              {% dnd_module "learn_cards" path="../modules/v-cards", label="Learn Cards", overrideable=True, no_wrapper=True,
+              v_card=[
+              {
+                "v_card_header": "Gartner Cool Vendor Award",
+                "v_card_subheader": "Verta was named  a Cool Vendor in AI Core Technologies — Scaling AI in the Enterprise.",
+                "v_card_link": {
+                  "url": {
+                      "content_id": null,
+                      "type": "EXTERNAL",
+                      "href": "https://info.verta.ai/gartner-coolvendor"
+                  },
+                  "open_in_new_tab": true,
+                  "no_follow": false
+                },
+                "v_card_link_text": "Learn More",
+                "v_card_thumbnail": {
+                  "size_type": "auto",
+                  "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/v-card-thumbnail.jpg",
+                  "alt": "v-card-thumbnail",
+                  "loading": "lazy",
+                  "width": 735,
+                  "height": 223,
+                  "max_width": 735,
+                  "max_height": 223
+                }
+              }  ,{
+              "v_card_header": "A Reference Architecture for Operational AI",
+              "v_card_subheader": "Learn how to run AIOps at scale and adopt an Operational AI mindset.",
+              "v_card_link": {
+                "url": {
+                    "content_id": null,
+                    "type": "EXTERNAL",
+                    "href": "https://info.verta.ai/operational-ai-architecture-slides"
+                },
+                "open_in_new_tab": true,
+                "no_follow": false
+              },
+              "v_card_link_text": "Learn More",
+              "v_card_thumbnail": {
+                "size_type": "auto",
+                "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/v-card-thumbnail-2.jpg",
+                "alt": "v-card-thumbnail",
+                "loading": "lazy",
+                "width": 735,
+                "height": 223,
+                "max_width": 735,
+                "max_height": 223
+              }
+            },
+            {
+                "v_card_header": "A Guide to Operational AI",
+                "v_card_subheader": "Verta was named  a Cool Vendor in AI Core Technologies — Scaling AI in the Enterprise.",
+                "v_card_link": {
+                  "url": {
+                      "content_id": null,
+                      "type": "EXTERNAL",
+                      "href": "https://info.verta.ai/guide-operational-ai"
+                  },
+                  "open_in_new_tab": true,
+                  "no_follow": false
+                },
+                "v_card_link_text": "Learn More",
+                "v_card_thumbnail": {
+                  "size_type": "auto",
+                  "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/v-card-thumbnail-4.jpg",
+                  "alt": "v-card-thumbnail",
+                  "loading": "lazy",
+                  "width": 735,
+                  "height": 223,
+                  "max_width": 735,
+                  "max_height": 223
+                }
+              }  ,{
+              "v_card_header": "The Guide to the MLOps Lifecycle",
+              "v_card_subheader": "Our informed understanding of all the steps of building and operationalizing machine learning.",
+              "v_card_link": {
+                "url": {
+                    "content_id": null,
+                    "type": "EXTERNAL",
+                    "href": "https://info.verta.ai/ai-ml-model-lifecycle-guide"
+                },
+                "open_in_new_tab": true,
+                "no_follow": false
+              },
+              "v_card_link_text": "Learn More",
+              "v_card_thumbnail": {
+                "size_type": "auto",
+                "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/v-card-thumbnail-3.jpg",
+                "alt": "v-card-thumbnail",
+                "loading": "lazy",
+                "width": 735,
+                "height": 223,
+                "max_width": 735,
+                "max_height": 223
+              }
+            }
+            ]
+              %}
+              {% end_dnd_module %}
+  
+            {% end_dnd_row %}
+          {% end_dnd_column %}
+        {% end_dnd_section %}
+      {% end_dnd_area %}
+      </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+   
+  </main>
+{% endblock body %}

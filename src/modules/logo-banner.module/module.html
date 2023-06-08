@@ -1,0 +1,14 @@
+<div class="flex items-center flex-wrap lg:flex-nowrap justify-center px-6 lg:px-0">
+  {% for item in module.logo %}
+  <div class="mx-3 mb-6 lg:mb-0">
+    {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+    {% if item.size_type == 'auto' %}
+    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif item.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ item.max_width }}" height="{{ item.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+    <img class="mx-auto opacity-50 max-h-[60px] w-full" src="{{ item.src }}" alt="{{ item.alt }}" {{ sizeAttrs }} loading="lazy"/>
+  </div> 
+  {% endfor %}
+</div>

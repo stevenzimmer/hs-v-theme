@@ -1,0 +1,38 @@
+<!-- module html  -->
+<div class="relative bg-white">
+    <div class="absolute left-0 right-0 bottom-0 w-full bg-v-offwhite h-1/2"></div>
+    <div class="container relative">
+        <div class="flex justify-center ">
+            <div class="w-11/12 md:w-full lg:w-11/12">
+                <div class="border-4 border-v-offwhite bg-white py-12 px-6 md:p-20 ">
+                    <div class="flex justify-center -mx-6 flex-wrap">
+                        <div class="w-11/12 md:w-3/12 px-6 text-center mb-6 md:mb-0">
+                            <div class="mb-2 px-12 md:px-0">
+                            {% if module.profile_box_headshot.src %}
+                                {% set sizeAttrs = 'width="{{ module.profile_box_headshot.width }}" height="{{ module.profile_box_headshot.height }}"' %}
+                                {% if module.profile_box_headshot.size_type == 'auto' %}
+                                    {% set sizeAttrs = 'width="{{ module.profile_box_headshot.width }}" height="{{ module.profile_box_headshot.height }}" style="max-width: 100%; height: auto;"' %}
+                                {% elif module.profile_box_headshot.size_type == 'auto_custom_max' %}
+                                    {% set sizeAttrs = 'width="{{ module.profile_box_headshot.max_width }}" height="{{ module.profile_box_headshot.max_height }}" style="max-width: 100%; height: auto;"' %}
+                                {% endif %}
+                                {% set loadingAttr = module.profile_box_headshot.loading != 'disabled' ? 'loading="{{ module.profile_box_headshot.loading }}"' : '' %}
+                                <img class="mx-auto max-w-[160px]" src="{{ module.profile_box_headshot.src }}" alt="{{ module.profile_box_headshot.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                            </div>
+                            
+                            <p class="text-v-black font-bold text-[20px]">{{ module.profile_box_name }}</p>
+                            <p class="text-v-grey text-[16px]">{{ module.profile_box_title }}</p>
+                        </div>
+
+                        <div class="w-11/12 md:w-9/12 px-6">
+                            <h3 class="text-[24px] text-v-black">{{ module.profile_box_header }}</h3>
+                            <div class="text-v-body text-[16px]">
+                                {{ module.profile_box_bio }}
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="featured-card bg-white rounded-lg overflow-hidden hover:v-shadow transition transform-gpu duration-200 hover:-translate-y-0.5">
+    <div class="flex flex-wrap flex-col-reverse md:flex-row">
+        <div class="md:w-6/12 w-full">
+            <div class="px-5 py-10">
+                <p class="text-[24px] lg:text-[28px]  mb-3 text-black font-medium leading-tight">{{ module.fc_header }}</p>
+                <p class="text-v-grey text-[16px] lg:text-[20px] mb-6 font-normal">{{ module.fc_subheader }}</p>
+                <div>
+                    {% set href = module.fc_link.url.href %}
+                    {% if module.fc_link.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                    {% endif %}
+                    <a href="{{ href }}" class="btn btn-secondary filled-purple"
+                        {% if module.fc_link.open_in_new_tab %}target="_blank"{% endif %}
+                        {% if module.fc_link.rel %}rel="{{ module.fc_link.rel }}"{% endif %}
+                        >
+                        {{ module.fc_link_text }}
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="md:w-6/12 w-full">
+            <div class="bg-slate-200 w-full h-48 md:h-full relative overflow-hidden">
+                {% if module.fc_thumbnail.src %}
+                    {% set sizeAttrs = 'width="{{ module.fc_thumbnail.width }}" height="{{ module.fc_thumbnail.height }}"' %}
+                    {% if module.fc_thumbnail.size_type == 'auto' %}
+                        {% set sizeAttrs = 'width="{{ module.fc_thumbnail.width }}" height="{{ module.fc_thumbnail.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.fc_thumbnail.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ module.fc_thumbnail.max_width }}" height="{{ module.fc_thumbnail.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.fc_thumbnail.loading != 'disabled' ? 'loading="{{ module.fc_thumbnail.loading }}"' : '' %}
+                    <img class="w-full h-full object-cover absolute inset-0 aspect-square"  src="{{ module.fc_thumbnail.src }}" alt="{{ module.fc_thumbnail.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                <div class="absolute left-20 md:-left-1 -bottom-1 md:top-12 w-16  h-16 origin-center -rotate-90 md:-rotate-0">
+                    <svg width="37" height="43" viewBox="0 0 37 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.5201 21.5781L0.520079 42.3627L0.52008 0.793515L36.5201 21.5781Z" fill="white"/>
+                        </svg>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

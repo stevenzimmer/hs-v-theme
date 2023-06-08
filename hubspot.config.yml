@@ -1,0 +1,14 @@
+defaultPortal: stevenzimmer
+portals:
+  - name: stevenzimmer
+    portalId: 5747173
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CJrJ2LWJMRIIAA0AAAAAAAwY5ePeAiCvhqkWKO7pDDIUvZBvjAR0LGZN6Ra3X1PBomWs4uA6KAAABEEAAAB4AAAAAAAAAAAAAAAAAAAABAAAwAcAAAAAPAAAAAAAAGBCFNLTj5dpWefhzO3x19-KtHAp1q4bSgNuYTFSAFoA
+        expiresAt: '2023-06-07T16:34:59.375Z'
+    personalAccessKey: >-
+      CiQ5ZmNiN2I2Ni1iM2YwLTQxZTctYWQ1NC1iMDQ1MWNlOTU2NTQQ5ePeAhivhqkWKhkABeaRgh5a1KGkxFpEdHZYPWuEYbhcx9iOSgNuYTE
+    sandboxAccountType: null
+    parentAccountId: null

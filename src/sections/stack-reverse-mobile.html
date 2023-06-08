@@ -1,0 +1,71 @@
+<!--
+ templateType: section
+ label: Stack Reverse Mobile
+ isAvailableForNewContent: true
+ screenshotPath: ../images/stack-reverse-mobile.png
+-->
+<!-- Begin partial -->
+{% dnd_section 
+  class="stack-reverse",
+  max_width=1040,
+  background_color="#ffffff"
+  padding={
+      "mobile": {
+        "left": "25px",
+        "right": "25px"
+      }
+    }
+%}
+  {% dnd_column
+    offset=0,
+    width=6
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+        {% module_attribute "html" %}
+          <h2 style="font-size: 32px; font-weight: normal; line-height: 1.25;"><span style="color: #000000;">Compliance requires new approach to ML model management&nbsp;</span></h2>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+        {% module_attribute "html" %}
+          <p style="font-size: 20px; font-weight: normal;">The new regulations are increasing financial and reputational risks for enterprises using AI and machine learning models in their business.</p>
+          <p style="font-size: 20px; font-weight: normal;"><br><span style="font-size: 18px;">To comply with the growing number of regulatory requirements, companies are implementing tools and capabilities to document and manage ML models throughout their lifecycle, ensure model explainability and transparency, and support Responsible AI principles.&nbsp;</span></p>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+  {% dnd_column
+    offset=6,
+    width=6
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/linked_image",
+        offset=0,
+        width=12,
+        horizontal_alignment="CENTER",
+        img={
+          "alt" : "compliance-requires-new-approach-trim",
+          "height" : 906,
+          "loading" : "lazy",
+          "max_height" : 906,
+          "max_width" : 1210,
+          "size_type" : "auto",
+          "src" : "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/compliance-requires-new-approach-trim.png",
+          "width" : 1210
+        }
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}

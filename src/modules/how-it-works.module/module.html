@@ -1,0 +1,36 @@
+
+
+<div class="flex flex-wrap justify-center">
+  {% for item in module.card %}
+    <div class="w-11/12 lg:w-1/3 px-6 mb-6 lg:mb-0">
+      <a class="block bg-white rounded-xl p-6 group border-2 border-transparent hover:border-v-purple" href="{{ item.card_link.href }}">
+        <div class="w-[48px] h-[48px] rounded-full border-2 border-transparent bg-v-offwhite group-hover:bg-white mx-auto mb-6 p-1 group-hover:border-v-purple" >
+          {% if item.icon.src %}
+            {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+            {% if item.icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif item.icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" loading="lazy" {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <p class="uppercase text-v-purple font-bold text-center text-[14px] mb-6 tracking-wide">
+          {{ item.title }}
+        </p>
+        <div class="">
+          {% if item.logo_field.src %}
+            {% set sizeAttrs = 'width="{{ item.logo_field.width }}" height="{{ item.logo_field.height }}"' %}
+            {% if item.logo_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif item.logo_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.logo_field.max_width }}" height="{{ item.logo_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            <img class="block mx-auto" src="{{ item.logo_field.src }}" alt="{{ item.logo_field.alt }}" loading="lazy" {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+      </a>
+    </div>
+  
+  {% endfor %}
+</div>

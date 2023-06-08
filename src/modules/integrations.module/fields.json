@@ -1,0 +1,85 @@
+[
+  {
+   "type": "text",
+   "id": "334212e0-bbbf-55a4-dd7f-b00fee12b06f",
+   "validation_regex": "",
+   "label": "Section Header",
+   "name": "section_header",
+   "default": "Integrations"
+  },
+  {
+   "type": "text",
+   "id": "0174ccb4-bce6-7d1e-5058-e2c8a7bb0633",
+   "validation_regex": "",
+   "label": "Section Paragraph",
+   "name": "section_paragraph",
+   "default": "We integrate with over 50 different platforms and we're always adding to fit customer needs"
+  },
+  {
+   "type": "group",
+   "id": "28f9312d-e3b8-165d-7d9a-522e6f5f0209",
+   "label": "Integration Rows",
+   "children": [
+    {
+     "type": "image",
+     "id": "d9dbb34a-09ad-fdb9-eac2-1e5f0fd3a01a",
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "label": "Icon",
+     "name": "icon"
+    },
+    {
+     "type": "text",
+     "id": "009f740b-e412-5912-812a-78db6367c231",
+     "validation_regex": "",
+     "label": "Title",
+     "name": "title"
+    },
+    {
+     "type": "text",
+     "id": "8bff2c44-12e6-0242-c5f1-56863aaa3124",
+     "validation_regex": "",
+     "label": "Paragraph",
+     "name": "paragraph"
+    },
+    {
+     "type": "image",
+     "id": "fa891c0e-79bc-dd6f-5c1f-d4b2b46c2b63",
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "label": "Image",
+     "name": "image"
+    }
+   ],
+   "name": "integration_rows",
+   "default": {
+    "icon": {
+     "size_type": "auto",
+     "src": "",
+     "alt": null,
+     "loading": "lazy"
+    },
+    "image": {
+     "size_type": "auto",
+     "src": "",
+     "alt": null,
+     "loading": "lazy"
+    }
+   },
+   "occurrence": {}
+  }
+ ]

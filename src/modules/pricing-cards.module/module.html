@@ -1,0 +1,56 @@
+<!-- module html  -->
+<div class="relative">
+  <div class="absolute w-full h-1/2 top-0 left-0 right-0" style="background-color
+  : #F6F6FB"></div>
+  <div class="container max-w-[1100px] relative">
+    <div class="flex flex-wrap justify-center -mx-3 relative">
+    {% for card in module.pc_cards %}
+        {% set href = card.pc_button.link.url.href %}
+        {% if card.pc_button.link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+      <div class="w-11/12 sm:w-7/12 mb-6 md:mb-0 md:w-1/2 lg:w-1/3 px-3">
+        <div class="bg-white rounded-[8px] border p-6 h-full">
+          <div class="mb-6">
+            <p class="text-[32px] font-medium mb-6">
+              {{card.pc_title}}
+            </p>
+            <p class="mb-6">
+              {{card.pc_description}}
+            </p>
+
+            <a class="btn btn-secondary {% if card.pc_button.style == 'primary' %} filled-purple {% else %} border cursor-not-allowed {% endif %}" {% if href %} href="{{href}}" {% endif %}
+            {% if item.pc_button.link.open_in_new_tab %}target="_blank"{% endif %}
+            {% if item.pc_button.link.rel %}rel="{{ item.pc_button.link.rel }}"{% endif %}>{{ card.pc_button.text }}</a>
+          </div>
+          <div>
+            {% for list in card.pc_lists %}
+            <div class="mb-6 last:mb-0">
+              <p class="text-[18px] text-black font-medium mb-2">{{list.title}}</p>
+              
+                {% for bullet in list.bullets %}
+                <div class="flex mb-2 last:mb-0">
+                  <div class="w-6">
+                    <svg class="mt-1" width="14"  viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.8063 1.29327C15.2031 1.749 15.2031 2.48546 14.8063 2.94119L6.67927 12.2745C6.28245 12.7302 5.64118 12.7302 5.24435 12.2745L1.17997 7.60785C0.783272 7.15212 0.783272 6.41566 1.17997 5.95994C1.57673 5.50421 2.21991 5.50421 2.61673 5.95994L5.93324 9.799L13.3713 1.29327C13.7682 0.836813 14.4094 0.836813 14.8063 1.29327Z" fill="#514EB5"/>
+                      </svg>                      
+                  </div>
+                  <div class="w-full">
+                    <p class="text-[16px] text-[#4D4D50]">
+                      {{bullet}}
+                    </p>
+                    
+                  </div>
+                </div>
+                {% endfor  %}
+            </div>
+          
+            {% endfor  %}
+          </div>
+        </div>
+      </div>
+
+      {% endfor  %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,184 @@
+[
+  {
+   "children": [
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/icon-cloud-purple.svg",
+      "alt": "icon-cloud-purple",
+      "loading": "lazy",
+      "width": 400,
+      "height": 400,
+      "max_width": 400,
+      "max_height": 400
+     },
+     "display_width": null,
+     "id": "da787bed-6f35-e4c2-f77d-de0efd954524",
+     "label": "Icon",
+     "locked": false,
+     "name": "icon",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "allow_new_line": false,
+     "default": "Verta Runs On",
+     "display_width": null,
+     "id": "75e28cef-ae9e-0c6a-8211-da4b5d315319",
+     "label": "Title",
+     "locked": false,
+     "name": "title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "default": {
+      "size_type": "exact",
+      "src": "https://f.hubspotusercontent20.net/hubfs/5747173/02-template-contents/homepage/verta-runs-on.png",
+      "alt": "verta-runs-on",
+      "loading": "lazy",
+      "width": 310,
+      "height": 150,
+      "max_width": 310,
+      "max_height": 150
+     },
+     "display_width": null,
+     "id": "ec75a136-64af-2848-a5aa-a3f2f4254636",
+     "label": "Logo Field",
+     "locked": false,
+     "name": "logo_field",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "default": {
+      "content_id": null,
+      "href": "",
+      "type": "EXTERNAL"
+     },
+     "display_width": null,
+     "id": "d883b6f4-9f2a-c264-7bba-97da84265385",
+     "label": "Card Link",
+     "locked": false,
+     "name": "card_link",
+     "required": false,
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG"
+     ],
+     "type": "url"
+    }
+   ],
+   "default": [
+    {
+     "icon": {
+      "size_type": "auto",
+      "src": "https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/icon-cloud-purple.svg",
+      "alt": "icon-cloud-purple",
+      "loading": "lazy",
+      "width": 400,
+      "height": 400,
+      "max_width": 400,
+      "max_height": 400
+     },
+     "title": "Verta Runs On",
+     "logo_field": {
+      "size_type": "exact",
+      "src": "https://f.hubspotusercontent20.net/hubfs/5747173/02-template-contents/homepage/verta-runs-on.png",
+      "alt": "verta-runs-on",
+      "loading": "lazy",
+      "width": 310,
+      "height": 150,
+      "max_width": 310,
+      "max_height": 150
+     },
+     "url_field": {
+      "content_id": null,
+      "href": "",
+      "type": "EXTERNAL"
+     }
+    },
+    {
+     "icon": {
+      "size_type": "auto",
+      "src": "https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/icon-cloud-purple.svg",
+      "alt": "icon-cloud-purple",
+      "loading": "lazy",
+      "width": 400,
+      "height": 400,
+      "max_width": 400,
+      "max_height": 400
+     },
+     "title": "Verta Runs On",
+     "logo_field": {
+      "size_type": "exact",
+      "src": "https://f.hubspotusercontent20.net/hubfs/5747173/02-template-contents/homepage/verta-runs-on.png",
+      "alt": "verta-runs-on",
+      "loading": "lazy",
+      "width": 310,
+      "height": 150,
+      "max_width": 310,
+      "max_height": 150
+     },
+     "url_field": {
+      "content_id": null,
+      "href": "",
+      "type": "EXTERNAL"
+     }
+    },
+    {
+     "icon": {
+      "size_type": "auto",
+      "src": "https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/icon-cloud-purple.svg",
+      "alt": "icon-cloud-purple",
+      "loading": "lazy",
+      "width": 400,
+      "height": 400,
+      "max_width": 400,
+      "max_height": 400
+     },
+     "title": "Verta Runs On",
+     "logo_field": {
+      "size_type": "exact",
+      "src": "https://f.hubspotusercontent20.net/hubfs/5747173/02-template-contents/homepage/verta-runs-on.png",
+      "alt": "verta-runs-on",
+      "loading": "lazy",
+      "width": 310,
+      "height": 150,
+      "max_width": 310,
+      "max_height": 150
+     },
+     "url_field": {
+      "content_id": null,
+      "href": "",
+      "type": "EXTERNAL"
+     }
+    }
+   ],
+   "display_width": null,
+   "expanded": false,
+   "id": "c6e3687e-b6c2-d02f-4ac3-a1f5fba9b3ea",
+   "label": "Card",
+   "locked": false,
+   "name": "card",
+   "occurrence": {
+    "default": 3,
+    "max": 3,
+    "sorting_label_field": "75e28cef-ae9e-0c6a-8211-da4b5d315319"
+   },
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  }
+ ]

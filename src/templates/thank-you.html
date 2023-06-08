@@ -1,0 +1,209 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: Thank you
+-->
+{% extends "../layouts/base.html" %}
+
+{% block body %}
+  <section class="bg-gradient-to-r from-[#393696] to-[#5956C0] relative overflow-hidden">
+    <div class="absolute w-full  md:w-5/12 h-full top-0 bottom-0 right-0  flex justify-end">
+      <div class="w-full h-full md:pl-12">
+      {% image "hero_background_image" 
+        label="Hero Backround Image", 
+        alt="Hero Backround Texture", 
+        align="center", 
+        src="https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/thank-you-template/hero-texture.png"
+        style="width: 100%; height: 100%; object-fit: cover"
+      %}
+
+      </div>
+    </div>
+     <div class="container relative px-6">
+        {% dnd_area "thankyou_header", class="thank-you-header" label="Thank you Header" %}
+          {% dnd_section
+            full_width="true"
+            padding={
+              "default" : {
+                "bottom" : "80px",
+                "top" : "80px"
+              },
+            
+            }
+          %}
+          {% dnd_column
+            offset=0,
+            width=6,
+          
+          %}
+            {% dnd_row
+              margin={
+                "default" : {
+                  "bottom" : "20px"
+                }
+              }
+            %}
+              {% dnd_module "Thank you Header" path="@hubspot/rich_text", width=12 %}
+                {% module_attribute "html"%}
+                    <h1 style="color: #ffffff; font-size: 56px; line-height 52px">Thank you</h1>
+                {% end_module_attribute %}
+              {% end_dnd_module %}
+            {% end_dnd_row %}
+            {% dnd_row
+              margin={
+                "default" : {
+                  "bottom" : "20px"
+                }
+              }
+            %}
+              {% dnd_column
+                offset=0,
+                width=12
+              %}
+                {% dnd_row %}
+                  {% dnd_module
+                    path="@hubspot/rich_text",
+                    offset=0,
+                    width=12
+                  %}
+                    {% module_attribute "html" %}
+                      <p style="font-size: 28px; color: #ffffff; line-height: 34px; font-weight: 400;">Check your email for a link to your download                      </p>
+                    {% end_module_attribute %}
+                  {% end_dnd_module %}
+                {% end_dnd_row %}
+       
+              {% end_dnd_column %}
+            {% end_dnd_row %}
+          {% end_dnd_column %}
+
+          {% end_dnd_section %}
+        {% end_dnd_area %}
+    </div>
+  </section>
+  <section class="bg-white">
+     <div class="container px-6">
+        {% dnd_area "thankyou_main", class="thank-you-main" label="Thank you Main section"  %}
+          {% dnd_section
+            full_width="true"
+            padding={
+              "default" : {
+                "top": "80px",
+                "bottom": "80px",
+              }
+            }
+          %}
+            {% dnd_column width=12 %}
+              {% dnd_row %}
+                {% dnd_column width=6, padding={
+                "default" : {
+                  "right": "60px",
+                },
+                "mobile" : {
+                  "right": "0",
+                }
+              } %}
+                  {% dnd_row 
+                    margin={
+                      "bottom": 40
+                    } 
+                  %}
+                    {% dnd_module "Main Body" path="@hubspot/rich_text"  %}
+                      {% module_attribute "html"%}
+                          <p style="font-size: 36px; line-height: 42px; font-weight: 500; margin-bottom: 20px">Manage, deploy, and monitor your models in one place.</p>
+                          <p style="font-size: 20px">The Verta Model Delivery & Operations Platform takes any data science or machine learning model and instantaneously packages and delivers it.</p>
+                      {% end_module_attribute %}
+                    {% end_dnd_module %}
+                    
+                  {% end_dnd_row %}
+                  {% dnd_row 
+                    margin={
+                      "bottom": 40
+                    }
+                  %}
+                    {% dnd_module
+                      path="@hubspot/video",
+                      width=12,
+                      hubspot_video={
+                        "height" : 1080,
+                        "player_id" : 71344951106,
+                        "player_type" : "hsvideo2",
+                        "size_type" : "auto_full_width",
+                        "width" : 1920
+                      },
+                      video_type="hubspot_video"
+                    %}
+                    {% end_dnd_module %}
+                  {% end_dnd_row %}
+                  
+                {% end_dnd_column %}
+                {% dnd_column width=5, offset=7 %}
+                  {% dnd_row %}
+                    {% dnd_module "Learn more Box" path="./../modules/learn-more-box" width=12, overrideable=True, no_wrapper=True, learn_more_box_header="Learn more about Operational AI" learn_more_links=[
+                    { 
+                      "learn_more_box_link": {
+                          "url": {
+                              "content_id": null,
+                              "type": "EXTERNAL",
+                              "href": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/07-downloads/brochures/Verta%20Platform%20Overview.pdf"
+                          },
+                          "open_in_new_tab": false,
+                          "no_follow": false
+                      },
+                      "learn_more_box_link_text": "Read Verta’s Platform Overview"
+                    },
+                    { 
+                      "learn_more_box_link": {
+                          "url": {
+                              "content_id": null,
+                              "type": "EXTERNAL",
+                              "href": "https://info.verta.ai/report-state-of-mlops-2022"
+                          },
+                          "open_in_new_tab": false,
+                          "no_follow": false
+                      },
+                      "learn_more_box_link_text": "The State of MLOps Research"
+                    },
+                    { 
+                      "learn_more_box_link": {
+                          "url": {
+                              "content_id": null,
+                              "type": "EXTERNAL",
+                              "href": "https://info.verta.ai/gartner-coolvendor"
+                          },
+                          "open_in_new_tab": false,
+                          "no_follow": false
+                      },
+                      "learn_more_box_link_text": "Verta named Gartner Cool Vendor 2022"
+                    },
+                    { 
+                      "learn_more_box_link": {
+                          "url": {
+                              "content_id": null,
+                              "type": "EXTERNAL",
+                              "href": "https://info.verta.ai/ai-for-insurance"
+                          },
+                          "open_in_new_tab": false,
+                          "no_follow": false
+                      },
+                      "learn_more_box_link_text": "Verta’s AI for Insurance"
+                    }
+                    ]
+                    
+                    %}
+                      
+                    {% end_dnd_module %}
+                  {% end_dnd_row %}
+                {% end_dnd_column %}
+
+              {% end_dnd_row %}
+            {% end_dnd_column %}
+            
+          
+          {% end_dnd_section %}
+        {% end_dnd_area %}
+        
+
+    </div>
+  </section>
+ 
+{% endblock body %}

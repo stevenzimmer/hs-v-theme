@@ -1,0 +1,17 @@
+.dnd {
+    &_two {
+        &-col {
+            &.floating {
+                &-img {
+                    .hs {
+                        &-image {
+                            &-widget {
+                                @apply transition-transform hover:-translate-y-0.5 duration-200;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

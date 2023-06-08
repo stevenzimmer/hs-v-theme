@@ -1,0 +1,45 @@
+<div class="v-card-wrapper">
+    <div class="flex flex-wrap justify-center -mx-2">
+        {% for item in module.v_card %}
+        <div class="md:w-6/12 px-2 mb-4">
+            <div class="rounded-lg overflow-hidden h-full bg-white group hover:v-shadow transition transform-gpu duration-200 hover:-translate-y-0.5">
+                <div class="">
+                    {% if item.v_card_thumbnail.src %}
+                    {% set sizeAttrs = 'width="{{ item.v_card_thumbnail.width }}" height="{{ item.v_card_thumbnail.height }}"' %}
+                    {% if item.v_card_thumbnail.size_type == 'auto' %}
+                        {% set sizeAttrs = 'width="{{ item.v_card_thumbnail.width }}" height="{{ item.v_card_thumbnail.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.v_card_thumbnail.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ item.v_card_thumbnail.max_width }}" height="{{ item.v_card_thumbnail.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                     {% set loadingAttr = item.v_card_thumbnail.loading != 'disabled' ? 'loading="{{ item.v_card_thumbnail.loading }}"' : '' %}
+                    <img class="w-full" src="{{ item.v_card_thumbnail.src }}" alt="{{ item.v_card_thumbnail.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                </div>
+                <div class="p-6 ">
+                    <p class="text-[20px] text-black mb-2 leading-tight">
+                        {{ item.v_card_header }}
+                    </p>
+                    <p class="text-[16px] text-v-grey mb-2">
+                        {{ item.v_card_subheader }}
+                    </p>
+                    <div class="pb-2">
+                        {% set href = item.v_card_link.url.href %}
+                        {% if item.v_card_link.url.type is equalto "EMAIL_ADDRESS" %}
+                            {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a class="text-v-purple hover:text-v-blue border-b-2 border-v-purple hover:border-v-blue pb-1 font-bold text-[16px]" href="{{ href }}"
+                            {% if item.v_card_link.open_in_new_tab %}target="_blank"{% endif %}
+                            {% if item.v_card_link.rel %}rel="{{ item.v_card_link.rel }}"{% endif %}
+                            >
+                            {{ item.v_card_link_text }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+	

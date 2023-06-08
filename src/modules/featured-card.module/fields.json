@@ -1,0 +1,85 @@
+[
+    {
+        "allow_new_line": false,
+        "default": "Verta Insights Research: The State of MLOps",
+        "display_width": null,
+        "id": "3c0c92cd-5861-33a5-01b4-def297b1b351",
+        "label": "Header",
+        "locked": false,
+        "name": "fc_header",
+        "required": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "validation_regex": ""
+    },
+    {
+        "allow_new_line": false,
+        "default": "Explores trends, best practices and opportunities shaping the industry.",
+        "display_width": null,
+        "id": "2151dc72-3818-1dea-fea8-e616bdd1d9d9",
+        "label": "Subheader",
+        "locked": false,
+        "name": "fc_subheader",
+        "required": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "validation_regex": ""
+    },
+    {
+        "default": {
+            "url": {
+                "content_id": null,
+                "type": "EXTERNAL",
+                "href": "https://info.verta.ai/report-state-of-mlops-2022"
+            },
+            "open_in_new_tab": false,
+            "no_follow": false
+        },
+        "display_width": null,
+        "id": "77cc6db3-3b69-7660-793f-c8b90e2f3215",
+        "label": "Link",
+        "locked": false,
+        "name": "fc_link",
+        "required": false,
+        "show_advanced_rel_options": false,
+        "supported_types": [
+            "EXTERNAL",
+            "CONTENT",
+            "FILE",
+            "EMAIL_ADDRESS",
+            "BLOG",
+            "CALL_TO_ACTION"
+        ],
+        "type": "link"
+    },
+    {
+        "default": {
+            "size_type": "auto",
+            "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/fc-thumbnail-placeholder.jpg",
+            "alt": "fc-thumbnail-placeholder",
+            "loading": "lazy",
+            "width": 748,
+            "height": 650,
+            "max_width": 748,
+            "max_height": 650
+        },
+        "display_width": null,
+        "id": "d086b9b6-2ca1-f7ad-d614-b81bfc35d636",
+        "label": "Thumbnail",
+        "locked": false,
+        "name": "fc_thumbnail",
+        "required": false,
+        "resizable": true,
+        "responsive": true,
+        "show_loading": false,
+        "type": "image"
+    },
+    {
+        "type": "text",
+        "id": "e593498b-0b79-cd37-2629-161cf5b0f28d",
+        "validation_regex": "",
+        "label": "Link Text",
+        "name": "fc_link_text",
+        "default": "Learn More"
+    }
+]

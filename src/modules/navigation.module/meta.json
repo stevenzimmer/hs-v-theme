@@ -1,0 +1,9 @@
+{
+  "global" : true,
+  "smart_type" : "NOT_SMART",
+  "icon" : "fontawesome-5.14.0:Globe:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 55355425940,
+  "label" : "Navigation",
+  "is_available_for_new_content" : false
+}

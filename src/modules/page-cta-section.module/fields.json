@@ -1,0 +1,135 @@
+[
+  {
+   "children": [
+    {
+     "default": {
+      "color": "#FFFFFF",
+      "opacity": 100
+     },
+     "display_width": null,
+     "id": "42a3f058-72d2-1ff8-1c4e-7ffc8aed5d60",
+     "label": "Text Color",
+     "locked": false,
+     "name": "text",
+     "required": false,
+     "type": "color"
+    },
+    {
+     "default": {
+      "color": "#27144c",
+      "opacity": 100
+     },
+     "display_width": null,
+     "id": "75822576-b506-5966-f968-396521d73d9e",
+     "label": "Background Color",
+     "locked": false,
+     "name": "bg",
+     "required": false,
+     "type": "color"
+    }
+   ],
+   "default": {
+    "text": {
+     "color": "#FFFFFF",
+     "opacity": 100
+    },
+    "bg": {
+     "color": "#27144c",
+     "opacity": 100
+    }
+   },
+   "display_width": null,
+   "expanded": false,
+   "id": "c2c2249c-85fb-1d0f-a0fe-f31548d494c8",
+   "label": "Colors",
+   "locked": false,
+   "name": "pcs_colors",
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  },
+  {
+   "allow_new_line": false,
+   "display_width": null,
+   "id": "93fea616-4630-9e06-eb5f-2fb15b230e15",
+   "label": "Header",
+   "locked": false,
+   "name": "pcs_text",
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
+  },
+  {
+   "type": "text",
+   "id": "8517510e-1d37-1038-7213-7804e89a1468",
+   "validation_regex": "",
+   "label": "Paragraph",
+   "name": "pcs_paragraph"
+  },
+  {
+   "children": [
+    {
+     "default": {
+      "url": {
+       "content_id": null,
+       "type": "EXTERNAL",
+       "href": ""
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
+     },
+     "display_width": null,
+     "id": "27abec41-d4d8-b4e4-e247-971dd3d62cbe",
+     "label": "Link",
+     "locked": false,
+     "name": "link",
+     "required": false,
+     "show_advanced_rel_options": false,
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG",
+      "CALL_TO_ACTION",
+      "PHONE_NUMBER",
+      "WHATSAPP_NUMBER"
+     ],
+     "type": "link"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "0a297be2-71fd-6a86-deb7-7f75d94bc409",
+     "label": "Text",
+     "locked": false,
+     "name": "btntext",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    }
+   ],
+   "default": {
+    "link": {
+     "url": {
+      "content_id": null,
+      "type": "EXTERNAL",
+      "href": ""
+     },
+     "open_in_new_tab": false,
+     "no_follow": false
+    }
+   },
+   "display_width": null,
+   "expanded": false,
+   "id": "13984557-007f-8ee6-9e96-cf0287a20983",
+   "label": "Button",
+   "locked": false,
+   "name": "pcs_button",
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  }
+ ]

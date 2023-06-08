@@ -1,0 +1,55 @@
+[
+    {
+        "type": "image",
+        "id": "23c32b8b-7ee3-3a2b-7500-0bc6e0a08457",
+        "default": {
+            "size_type": "auto",
+            "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/manasi-vartak-rounded.png",
+            "alt": "manasi-vartak-rounded",
+            "loading": "lazy",
+            "width": 320,
+            "height": 320,
+            "max_width": 320,
+            "max_height": 320
+        },
+        "resizable": true,
+        "responsive": true,
+        "show_loading": false,
+        "label": "Headshot",
+        "name": "profile_box_headshot"
+    },
+    {
+        "type": "text",
+        "id": "5389cac3-127d-33f5-dd31-315a65eff19a",
+        "validation_regex": "",
+        "label": "Name",
+        "name": "profile_box_name",
+        "default": "Manasi Vartak"
+    },
+    {
+        "type": "text",
+        "id": "0be0d79e-0f3b-97cc-ea7b-2356ea444840",
+        "validation_regex": "",
+        "label": "Title",
+        "name": "profile_box_title",
+        "default": "CEO, Verta"
+    },
+    {
+        "type": "text",
+        "id": "7bddba75-a75c-f1a7-4473-ec8ec968b0f9",
+        "validation_regex": "",
+        "label": "Header",
+        "name": "profile_box_header",
+        "default": "Meet Verta’s founder"
+    },
+    {
+        "default": "<p style=\"font-size: 16px;\">Manasi Vartak is the founder and CEO of Verta. While working on her Ph.D. at MIT CSAIL, Manasi created ModelDB, the first open-source model management system deployed at Fortune 500 companies to system to version machine learning models and track ML metadata across the model lifecycle. In addition to frequently speaking at AI/ML industry events and writing for industry publications, she frequently consults with companies seeking to accelerate the benefits of their ML initiatives.</p>",
+        "display_width": null,
+        "id": "text",
+        "label": "Bio",
+        "locked": false,
+        "name": "profile_box_bio",
+        "required": false,
+        "type": "richtext"
+    }
+]

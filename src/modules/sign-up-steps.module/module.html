@@ -1,0 +1,66 @@
+<!-- module html  -->
+{% macro caret_icon() %}
+
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17.0222 12.681C17.0222 12.4763 16.9389 12.2717 16.7725 12.1156L11.5344 7.20499C11.2012 6.89261 10.661 6.89261 10.3279 7.20499C9.99486 7.51724 9.99486 8.02361 10.3279 8.33602L14.9629 12.681L10.3281 17.026C9.99502 17.3384 9.99502 17.8447 10.3281 18.157C10.6612 18.4695 11.2014 18.4695 11.5346 18.157L16.7727 13.2464C16.9391 13.0903 17.0222 12.8856 17.0222 12.681Z" class="fill-[#C4C4C4]"/>
+  </svg>
+  
+{% endmacro %}
+<div class="border-2 rounded-xl p-6">
+<div class="flex items-center flex-wrap justify-between ">
+  <div class="w-full md:w-6/12 mb-12 lg:mb-0">
+
+    {% for row in module.sign_up_steps %}
+    
+    <div class="flex items-center flex-wrap md:flex-nowrap cursor-pointer group sign-up-step hover:bg-v-offwhite p-6 {% if loop.first %} active {% endif %} ">
+      <div class="w-[90px] mb-3 md:mb-0">
+        <div class="row-icon w-[75px] h-[75px] rounded-full bg-[#C4C4C4]  flex items-center align-center ">
+          {% if row.icon.src %}
+            {% set sizeAttrs = 'width="{{ row.icon.width }}" height="{{ row.icon.height }}"' %}
+            {% if row.icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ row.icon.width }}" height="{{ row.icon.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif row.icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ row.icon.max_width }}" height="{{ row.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = row.icon.loading != 'disabled' ? 'loading="{{ row.icon.loading }}"' : '' %}
+            <img class="mx-auto block" width="40" src="{{ row.icon.src }}" alt="{{ row.icon.alt }}" {{ loadingAttr }}>
+          {% endif %}
+        </div>
+      </div>
+      <div class="w-full md:px-6 mb-3 md:mb-0">
+        <p class="text-[18px] font-bold  row-title">
+          {{row.title}}
+        </p>
+        
+      </div>
+      <div class="">
+        <div class="row-caret origin-center duration-200">
+          {{caret_icon()}}
+        </div>
+      </div>
+      
+    </div>
+    <div class="md:hidden p-6">
+
+      <div class="step-content-mobile {% if !loop.first %} hidden {% endif %}">
+        {{ row.content }}
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+  <div class="w-full md:w-6/12 px-6">
+    <div class="hidden md:block">
+
+    
+    {% for row in module.sign_up_steps %}
+    <div class="step-content {% if !loop.first %} hidden {% endif %}">
+      {{ row.content }}
+    </div>
+    {% endfor %}
+
+  </div>
+   
+  </div>
+</div>
+</div>

@@ -1,0 +1,113 @@
+<!--
+ templateType: section
+ label: Two Column
+ isAvailableForNewContent: true
+-->
+
+
+{% dnd_section
+    class="dnd_two-col floating-img",
+  background_color={{ context.bgColor }},
+  padding={{ context.section_padding }},
+  full_width=false,
+  max_width=1090,
+  vertical_alignment={{context.vertical_alignment}}
+%}
+  {% dnd_column
+    offset=0,
+    width=6,
+    padding={
+      "default" : {
+          "left": 0,
+          "right": 0
+      },
+      "mobile" : {
+          "left": 25,
+          "right": 25
+      } 
+  }
+  %}
+    {% dnd_row
+      margin={
+        "default" : {
+          "bottom" : "20px"
+        }
+      }
+    %}
+      {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+        {% module_attribute "html" %}
+          {{ context.header }}
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% dnd_row
+      margin={
+        "default" : {
+          "bottom" : "20px"
+        }
+      }
+    %}
+      {% dnd_column
+        offset=0,
+        width=12
+      %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/rich_text",
+            offset=0,
+            width=12
+          %}
+            {% module_attribute "html" %}
+             {{ context.body }}
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/divider",
+            offset=0,
+            width=12,
+            color={
+              "color" : "#000000",
+              "opacity" : 0
+            },
+            height=1,
+            show_padding=true
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/rich_text",
+            offset=0,
+            width=12
+          %}
+            {% module_attribute "html" %}
+              <p style="font-size: 16px; color: line-height: 1.25; font-weight: 400;"><a href={{context.cta_link}} class="text-black hover:text-v-purple pb-1 border-b-2 border-black" rel="noopener" style="color: line-height: 24px; font-weight: bold;">{{context.cta_text}}</a></p>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+  {% dnd_column
+    offset=6,
+    width=6
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/linked_image",
+        offset=0,
+        width=12,
+        horizontal_alignment="CENTER",
+        img={{context.img}}
+        link="https://blog.verta.ai/ready-for-ai-regulations"
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}

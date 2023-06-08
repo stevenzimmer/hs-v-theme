@@ -1,0 +1,141 @@
+
+/* ==========================================================================
+Video Testimonial Module
+========================================================================== */
+.video_testimonial-container .video-wrapper {
+  transform: translateX(50px);
+  z-index: 2;
+}
+
+.video_testimonial-container .thumbnail-wrapper {
+  width: 457px;
+  height: 255px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 6px 17px -5px rgb(0 0 0 / 25%);
+}
+
+.video_testimonial-container .thumbnail {
+  min-width: 100%;
+  height: 255px;
+  transition: all 250ms ease;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.video_testimonial-container .thumbnail-wrapper.active .thumbnail {
+  opacity: 0;
+}
+
+.video_testimonial-container .thumbnail img {
+  width: 100px;
+  height: 100px;
+  opacity: .8;
+  transition: all 250ms ease;
+}
+
+.video_testimonial-container .thumbnail:hover img {
+  opacity: 1;
+}
+
+.video_testimonial-container .embed-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 250ms ease;
+}
+
+.video_testimonial-container .thumbnail-wrapper.active .embed-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video_testimonial-container .embed-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video_testimonial-container .embed-wrapper iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video_testimonial-container .content-wrapper {
+  transform: translateY(50px);
+  overflow: hidden;
+  padding: 70px;
+  border: 2px solid var(--verta-purple);
+}
+
+.video_testimonial-container .quote-wrapper {
+  overflow: hidden;
+}
+
+.video_testimonial-container .quote {
+  min-width: 100%;
+  transition: all 250ms ease;
+}
+
+.video_testimonial-container .quote .p3 {
+  position: relative;
+}
+
+.video_testimonial-container .quote .p3:before {
+  content: "";
+  background: center / contain no-repeat url('https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/elements/quote-marks-grey.svg');
+  width: 11px;
+  height: 19px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -18px;
+}
+
+.video_testimonial-container .quote .p4 {
+  font-weight: 700;
+  color: var(--verta-light-grey);
+}
+
+@media (max-width: 950px) {
+  .video_testimonial-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  
+  .video_testimonial-container .slider-wrapper {
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+  }
+  
+  .video_testimonial-container .video-wrapper {
+    align-items: center;
+    transform: translateX(0px);
+  }
+  
+  .video_testimonial-container .content-wrapper {
+    transform: translateY(0px);
+    width: 100%;
+    max-width: 457px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .video_testimonial-container .thumbnail-wrapper {
+    width: 100%;
+    max-width: 457px;
+  }
+}
+
+@media (max-width: 500px) {
+  .video_testimonial-container .content-wrapper {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,128 @@
+[
+    {
+        "children": [
+            {
+                "allow_new_line": false,
+                "default": "Gartner Cool Vendor Award",
+                "display_width": null,
+                "id": "c3b01699-f563-b0d5-7222-021d81dd35c5",
+                "label": "Header",
+                "locked": false,
+                "name": "v_card_header",
+                "required": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "validation_regex": ""
+            },
+            {
+                "allow_new_line": false,
+                "default": "Verta was named a Cool Vendor in AI Core Technologies — Scaling AI in the Enterprise.",
+                "display_width": null,
+                "id": "51f5503d-3681-67b2-63e1-b94f9d375d29",
+                "label": "Subheader",
+                "locked": false,
+                "name": "v_card_subheader",
+                "required": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "validation_regex": ""
+            },
+            {
+                "default": {
+                    "url": {
+                        "content_id": null,
+                        "type": "EXTERNAL",
+                        "href": ""
+                    },
+                    "open_in_new_tab": false,
+                    "no_follow": false
+                },
+                "display_width": null,
+                "id": "9c615fd3-548c-e1b9-12a6-5673bd2ba185",
+                "label": "Link",
+                "locked": false,
+                "name": "v_card_link",
+                "required": false,
+                "show_advanced_rel_options": false,
+                "supported_types": [
+                    "EXTERNAL",
+                    "CONTENT",
+                    "FILE",
+                    "EMAIL_ADDRESS",
+                    "BLOG",
+                    "CALL_TO_ACTION"
+                ],
+                "type": "link"
+            },
+            {
+                "allow_new_line": false,
+                "default": "Learn More",
+                "display_width": null,
+                "id": "78f87047-219d-f857-3ec0-422d75ee4bed",
+                "label": "Link Text",
+                "locked": false,
+                "name": "v_card_link_text",
+                "required": false,
+                "show_emoji_picker": false,
+                "type": "text",
+                "validation_regex": ""
+            },
+            {
+                "default": {
+                    "size_type": "auto",
+                    "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/v-card-thumbnail.jpg",
+                    "alt": "v-card-thumbnail",
+                    "loading": "lazy",
+                    "width": 735,
+                    "height": 223,
+                    "max_width": 735,
+                    "max_height": 223
+                },
+                "display_width": null,
+                "id": "b83499c2-ec66-27b0-aba1-b6c1ee2cd33d",
+                "label": "Thumbnail",
+                "locked": false,
+                "name": "v_card_thumbnail",
+                "required": false,
+                "resizable": true,
+                "responsive": true,
+                "show_loading": false,
+                "type": "image"
+            }
+        ],
+        "default": {
+            "v_card_header": "Gartner Cool Vendor Award",
+            "v_card_subheader": "Verta was named  a Cool Vendor in AI Core Technologies — Scaling AI in the Enterprise.",
+            "v_card_link": {
+                "url": {
+                    "content_id": null,
+                    "type": "EXTERNAL",
+                    "href": ""
+                },
+                "open_in_new_tab": false,
+                "no_follow": false
+            },
+            "v_card_link_text": "Learn More",
+            "v_card_thumbnail": {
+                "size_type": "auto",
+                "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/v-card-thumbnail.jpg",
+                "alt": "v-card-thumbnail",
+                "loading": "lazy",
+                "width": 735,
+                "height": 223,
+                "max_width": 735,
+                "max_height": 223
+            }
+        },
+        "display_width": null,
+        "expanded": false,
+        "id": "62aeb56b-2b9e-bc76-b40b-04d30969cd63",
+        "label": "Card",
+        "locked": false,
+        "name": "v_card",
+        "occurrence": {},
+        "required": false,
+        "tab": "CONTENT",
+        "type": "group"
+    }
+]

@@ -1,0 +1,60 @@
+[
+  {
+   "children": [
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "id": "d9dbb34a-09ad-fdb9-eac2-1e5f0fd3a01a",
+     "label": "Icon",
+     "locked": false,
+     "name": "icon",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "009f740b-e412-5912-812a-78db6367c231",
+     "label": "Title",
+     "locked": false,
+     "name": "title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "type": "richtext",
+     "id": "6a2cc392-4ea0-4176-baf8-348496649a36",
+     "label": "Content",
+     "name": "content"
+    }
+   ],
+   "default": {
+    "icon": {
+     "size_type": "auto",
+     "src": "",
+     "alt": null,
+     "loading": "lazy"
+    }
+   },
+   "display_width": null,
+   "expanded": false,
+   "id": "28f9312d-e3b8-165d-7d9a-522e6f5f0209",
+   "label": "Steps",
+   "locked": false,
+   "name": "sign_up_steps",
+   "occurrence": {},
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  }
+ ]

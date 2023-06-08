@@ -1,0 +1,138 @@
+.life_cycle-container .life_cycle-wrapper {
+  border-radius: 10px;
+  border: 2px solid var(--verta-offwhite);
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+}
+
+.life_cycle-container .dropdown-wrapper {
+  overflow: hidden;
+  border-bottom: 1px solid var(--verta-offwhite);
+}
+
+.life_cycle-container .dropdown-wrapper:last-child {
+  border-bottom: none;
+}
+
+.life_cycle-container .title-wrapper {
+  cursor: pointer;
+}
+
+.life_cycle-container .title-wrapper svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 25px;
+}
+
+.life_cycle-container .title-wrapper.active svg .dropdown-arrow {
+  d: path("M29.81 51.96h49.92v8.32H29.81z");
+}
+
+.life_cycle-container .dropdown-wrapper .text-wrapper {
+  display: none;
+  padding-left: 49px;
+}
+
+.life_cycle-container .dropdown-wrapper .text-wrapper.active {
+  display: block;
+}
+
+.life_cycle-container .dropdown-wrapper .text-link-purple {
+  display: flex;
+}
+
+.life_cycle-container .graphic {
+  width: 100%;
+}
+
+.life_cycle-container .graphic svg {
+  width: 100%;
+}
+
+#Monitor, #Operate, #Deploy, #Manage {
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.life_cycle-container .graphic svg .st1,
+.life_cycle-container .graphic svg .st2,
+.life_cycle-container .graphic svg .st3,
+.life_cycle-container .graphic svg .st4,
+.life_cycle-container .graphic svg .st5,
+.life_cycle-container .graphic svg .st6 {
+  transition: all 250ms ease;
+}
+
+#Monitor:hover .st4, 
+#Operate:hover .st4, 
+#Deploy:hover .st4, 
+#Manage:hover .st4 {
+  fill: var(--verta-purple);
+}
+#Monitor.active .st4,
+#Monitor.active .st5,
+#Operate.active .st4, 
+#Operate.active .st5, 
+#Deploy.active .st4,
+#Deploy.active .st5,
+#Manage.active .st4,
+#Manage.active .st5 {
+  -webkit-filter: drop-shadow( 0px 5px 10px #d5d5d5);
+  filter: drop-shadow( 0px 5px 10px #d5d5d5);
+  fill: var(--verta-purple);
+}
+
+#Monitor:hover .st1, 
+#Monitor.active .st1,
+#Operate:hover .st1, 
+#Operate.active .st1,
+#Deploy:hover .st1,
+#Deploy.active .st1, 
+#Manage:hover .st1,
+#Manage.active .st1,
+#Manage:hover .st6,
+#Manage.active .st6 {
+  fill: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .life_cycle-container .copy-wrapper {
+    max-width: 650px;
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+  
+  .life_cycle-container .dropdown-wrapper {
+    width: 100%;
+  }
+  
+  .life_cycle-container .graphic-wrapper {
+    margin-top: 50px;
+  }
+  
+  .life_cycle-container .graphic {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 650px) {
+  .life_cycle-container .life_cycle-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .life_cycle-container .copy-wrapper > h2,
+  .life_cycle-container .copy-wrapper > p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .life_cycle-container .life_cycle-wrapper {
+    padding: 30px;
+  }
+  
+  .life_cycle-container .copy-wrapper > h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}

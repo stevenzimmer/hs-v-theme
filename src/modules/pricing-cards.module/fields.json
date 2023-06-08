@@ -1,0 +1,147 @@
+[
+  {
+   "type": "group",
+   "id": "32291ce5-b085-6234-71d1-c1e940c2a5bb",
+   "label": "Card",
+   "children": [
+    {
+     "type": "text",
+     "id": "b38b8edd-aa1c-a755-2379-40531ca26f13",
+     "validation_regex": "",
+     "label": "Title",
+     "name": "pc_title",
+     "default": "Free"
+    },
+    {
+     "type": "text",
+     "id": "ea862ef8-7632-7846-8a35-fbc139876b82",
+     "validation_regex": "",
+     "label": "Description",
+     "name": "pc_description",
+     "default": "For individuals and small teams to easily organize and manage all their ML models"
+    },
+    {
+     "type": "group",
+     "id": "45540937-74e9-b8cf-45ab-706e92babf10",
+     "label": "Button",
+     "children": [
+      {
+       "type": "link",
+       "id": "bdbc2819-8050-c007-73cd-88aace5991cc",
+       "default": {
+        "url": {
+         "content_id": null,
+         "type": "EXTERNAL",
+         "href": ""
+        },
+        "open_in_new_tab": false,
+        "no_follow": false
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER"
+       ],
+       "label": "Link",
+       "name": "link"
+      },
+      {
+       "type": "text",
+       "id": "da1efe55-c8ba-8f0f-3c2d-2c3321730f52",
+       "validation_regex": "",
+       "label": "Text",
+       "name": "text"
+      },
+      {
+       "type": "choice",
+       "id": "70fd65b0-18ef-1606-fcb6-0a111ad39e31",
+       "display": "radio",
+       "choices": [
+        [
+         "primary",
+         "Primary"
+        ],
+        [
+         "ghost",
+         "Ghost"
+        ]
+       ],
+       "label": "Style",
+       "name": "style",
+       "default": "primary"
+      }
+     ],
+     "name": "pc_button",
+     "default": {
+      "link": {
+       "url": {
+        "content_id": null,
+        "type": "EXTERNAL",
+        "href": ""
+       },
+       "open_in_new_tab": false,
+       "no_follow": false
+      },
+      "style": "primary"
+     }
+    },
+    {
+     "type": "group",
+     "id": "50cfadcc-e14e-5184-1aff-1e2d215bd588",
+     "label": "List",
+     "children": [
+      {
+       "type": "text",
+       "id": "690c7827-30ce-f4dc-88c7-f2da153d8d03",
+       "validation_regex": "",
+       "label": "Title",
+       "name": "title",
+       "default": "Features"
+      },
+      {
+       "type": "text",
+       "id": "8f181230-e5c6-5858-452f-ba318ac0f2c1",
+       "validation_regex": "",
+       "label": "Bullet",
+       "name": "bullets",
+       "occurrence": {},
+       "default": "Model Catalog"
+      }
+     ],
+     "name": "pc_lists",
+     "default": {
+      "title": "Features",
+      "bullets": "Model Catalog"
+     },
+     "occurrence": {}
+    }
+   ],
+   "name": "pc_cards",
+   "default": {
+    "pc_title": "Free",
+    "pc_description": "For individuals and small teams to easily organize and manage all their ML models",
+    "pc_button": {
+     "link": {
+      "url": {
+       "content_id": null,
+       "type": "EXTERNAL",
+       "href": ""
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
+     },
+     "style": "primary"
+    },
+    "pc_lists": {
+     "title": "Features",
+     "bullets": "Model Catalog"
+    }
+   },
+   "occurrence": {}
+  }
+ ]

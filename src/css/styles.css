@@ -1,0 +1,42 @@
+@import "./main.css";
+@import "./_layouts.css";
+@import "./_dnd.css";
+@import "./_typography.css";
+@import "./_imgs.css";
+@import "./_sections.css";
+
+
+
+@import "./_btns.css";
+
+body {
+    color: #000000;
+}
+
+.angled-hero {
+    background: linear-gradient(
+        176deg,
+        var(--verta-purple) 0px,
+        var(--verta-purple) 525px,
+        var(--white) 526px
+    );
+}
+
+.split {
+    &-box {
+        &-right {
+            h3 {
+                @apply text-[24px] text-v-black mb-2;
+            }
+            p {
+                @apply mb-2;
+            }
+        }
+    }
+}
+
+.stack-reverse {
+ > .row-fluid {
+    @apply flex flex-col-reverse lg:flex-row;
+  }
+}

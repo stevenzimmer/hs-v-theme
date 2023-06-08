@@ -1,0 +1,27 @@
+
+   
+<div class="flex flex-wrap justify-center">
+  {% for item in module.company %}
+  <div class="w-11/12 md:w-1/3 px-12 mb-12 md:mb-0 last:mb-0">
+    <div class="mb-6 text-center">
+      {% if item.logo.src %}
+        {% set sizeAttrs = 'width="{{ item.logo.width }}" height="{{ item.logo.height }}"' %}
+        {% if item.logo.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.logo.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.logo.max_width }}" height="{{ item.logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+          {% set loadingAttr = item.logo.loading != 'disabled' ? 'loading="{{ item.logo.loading }}"' : '' %}
+          <img class="block mx-auto {% if loop.index != 2 %} !w-[200px] sm:!h-[41px] {% else %} !w-[269px] {% endif %} " src="{{ item.logo.src }}" alt="{{ item.logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+    <p class="text-center mb-6">
+      {{ item.paragraph }}
+    </p>
+    <div class="text-center">
+      <a href="{{ item.cta.cta_link.href }}" class="text-link-purple">{{ item.cta.cta_text }}</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+

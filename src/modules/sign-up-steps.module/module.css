@@ -1,0 +1,36 @@
+.sign-up-step.active .row-title {
+  color: #514EB5;
+}
+
+.sign-up-step.active {
+  background-color: #f5f4f7;
+}
+
+
+
+.sign-up-step.active .row-caret path {
+  fill: #514EB5;
+}
+
+.sign-up-step.active .row-icon  {
+  background-color: #514EB5;
+}
+
+.sign-up-step .step-content-mobile  {
+  display:none;
+}
+
+.sign-up-step.active .step-content-mobile  {
+  display:block;
+}
+
+.step-content ul li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width:767px ) {
+  .sign-up-step.active .row-caret {
+    transform: rotate(90deg);
+  }
+}
+ 

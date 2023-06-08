@@ -1,0 +1,67 @@
+<!-- module html  -->
+{% macro caret_icon() %}
+<svg class="ml-auto" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle class="stroke-[#C4C4C4] group-hover:stroke-[#514EB5]"  cx="12.7893" cy="12.5625" r="11.2107" fill="white"  stroke-width="2"/>
+  <path d="M17.023 12.5624C17.023 12.3577 16.9396 12.153 16.7732 11.997L11.5352 7.08634C11.202 6.77396 10.6617 6.77396 10.3287 7.08634C9.99559 7.39859 9.99559 7.90496 10.3287 8.21737L14.9636 12.5624L10.3288 16.9074C9.99575 17.2198 9.99575 17.7261 10.3288 18.0383C10.6619 18.3508 11.2021 18.3508 11.5353 18.0383L16.7734 13.1278C16.9398 12.9716 17.023 12.767 17.023 12.5624Z" class="fill-[#C4C4C4] group-hover:fill-[#514EB5]"/>
+</svg>
+{% endmacro %}
+
+<div class="flex items-center flex-wrap justify-between px-6 md:px-0">
+  <div class="w-full md:w-6/12  md:border-r mb-12 lg:mb-0">
+    <div class="mb-6 lg:w-1/2">
+      <h3 class="text-[32px] text-black mb-3">{{ module.section_header }}</h3>    
+      <p>
+        {{ module.section_paragraph }}
+      </p>
+    </div>
+    {% for row in module.integration_rows %}
+    <div class="w-full lg:w-11/12 mb-12 last:mb-0">
+      <div class="flex items-center cursor-pointer  group integrations-row {% if loop.first %} active {% endif %}">
+        <div class="w-[90px]">
+          <div class="row-icon w-[75px] h-[75px] rounded-full bg-[#C4C4C4] group-hover:bg-[#514EB5] flex items-center align-center ">
+            {% if row.icon.src %}
+              {% set sizeAttrs = 'width="{{ row.icon.width }}" height="{{ row.icon.height }}"' %}
+              {% if row.icon.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ row.icon.width }}" height="{{ row.icon.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif row.icon.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ row.icon.max_width }}" height="{{ row.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = row.icon.loading != 'disabled' ? 'loading="{{ row.icon.loading }}"' : '' %}
+              <img class="mx-auto block" width="40" src="{{ row.icon.src }}" alt="{{ row.icon.alt }}" {{ loadingAttr }}>
+            {% endif %}
+          </div>
+        </div>
+        <div class="w-full px-6">
+          <p class="text-[20px] font-bold mb-2 group-hover:text-[#514EB5] row-title">
+            {{row.title}}
+          </p>
+          <p class="text-[18px]">
+            {{row.paragraph}}
+          </p>
+        </div>
+        <div class="">
+          <div class="row-caret">
+            {{caret_icon()}}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="w-full md:w-6/12">
+    {% for row in module.integration_rows %}
+
+      {% if row.image.src %}
+        {% set sizeAttrs = 'width="{{ row.image.width }}" height="{{ row.image.height }}"' %}
+        {% if row.image.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ row.image.width }}" height="{{ row.image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif row.image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ row.image.max_width }}" height="{{ row.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+         {% set loadingAttr = row.image.loading != 'disabled' ? 'loading="{{ row.image.loading }}"' : '' %}
+
+        <img class="row-img {% if !loop.first %} hidden {% endif %}"  src="{{ row.image.src }}" alt="{{ row.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} />
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,130 @@
+[
+  {
+   "default": 55365215798,
+   "display_width": null,
+   "id": "199ffeec-678d-94b9-11c2-1ff1e60ddb1b",
+   "label": "Select Menu",
+   "locked": true,
+   "name": "select_menu",
+   "placeholder": "Select menu for navigation",
+   "required": true,
+   "type": "menu"
+  },
+  {
+   "children": [
+    {
+     "allow_new_line": false,
+     "default": "Sign Up for a Trial",
+     "display_width": null,
+     "id": "942125df-621e-a794-7334-f33b02a90e16",
+     "label": "CTA Text",
+     "locked": false,
+     "name": "cta_text",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "type": "link",
+     "id": "6b5ad986-46db-3d8c-65c0-339f55a58d83",
+     "default": {
+      "url": {
+       "content_id": null,
+       "type": "EXTERNAL",
+       "href": ""
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
+     },
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG",
+      "CALL_TO_ACTION",
+      "PHONE_NUMBER",
+      "WHATSAPP_NUMBER"
+     ],
+     "label": "CTA Link",
+     "name": "link"
+    }
+   ],
+   "default": {
+    "cta_text": "Sign Up for a Trial",
+    "link": {
+     "url": {
+      "content_id": null,
+      "type": "EXTERNAL",
+      "href": ""
+     },
+     "open_in_new_tab": false,
+     "no_follow": false
+    }
+   },
+   "display_width": null,
+   "expanded": false,
+   "id": "bb6702b7-09e1-2719-894b-23807f0aafc3",
+   "label": "CTA",
+   "locked": true,
+   "name": "cta",
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  },
+  {
+   "children": [
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "id": "b7c85a9d-377d-ed07-e685-9a07a1b7401e",
+     "label": "Icon",
+     "locked": false,
+     "name": "icon",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "89583d3b-eb67-670a-f362-5e7bbf0785c9",
+     "label": "Navigation Item",
+     "locked": false,
+     "name": "navigation_item",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    }
+   ],
+   "default": {
+    "icon": {
+     "size_type": "auto",
+     "src": "",
+     "alt": null,
+     "loading": "lazy"
+    }
+   },
+   "display_width": null,
+   "expanded": false,
+   "id": "ba5b9498-1faa-5405-c9f0-9a77aa6ae602",
+   "label": "Icon",
+   "locked": true,
+   "name": "icon",
+   "occurrence": {
+    "sorting_label_field": "89583d3b-eb67-670a-f362-5e7bbf0785c9"
+   },
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  }
+ ]

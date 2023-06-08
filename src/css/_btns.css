@@ -1,0 +1,30 @@
+.hs {
+  &-button {
+    @apply px-4 py-4 rounded-[8px] text-[16px] font-bold border-2 border-v-purple block  min-w-[140px] text-center transition-all duration-200;
+
+    &:hover {
+      @apply border-v-blue;
+    }
+  }
+}
+
+.btn {
+ @apply border-2 border-v-purple md:min-w-[140px] py-4;
+  &-ghost {
+    @apply bg-white border-2 border-v-purple text-v-purple;
+    &:hover {
+      @apply border-v-blue text-white ;
+    }
+  }
+
+  &.filled {
+    &-blue {
+      &:hover {
+        @apply bg-white border-white;
+      }
+    }
+  }
+  &:hover {
+    @apply  bg-v-blue border-v-blue;
+  }
+}

@@ -1,0 +1,64 @@
+<!-- module html  -->
+<div class="mb-12 max-w-sm mx-auto relative" id="personas-section">
+  {% for item in module.personas %}
+    {% if loop.first %}
+    <div class="persona-select flex items-center justify-between bg-[#553EB0] text-white p-6 rounded-lg shadow cursor-pointer mb-3">
+      <div class="persona-select-text">
+        {{ item.dropwdown_text }}
+      </div>
+      <div>
+        <svg class="persona-caret origin-center transition-transform duration-200" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_2573_27349)">
+          <path d="M7.50004 12.5604C7.76887 12.5604 8.03767 12.4509 8.24263 12.2324L14.6923 5.35268C15.1026 4.91504 15.1026 4.20549 14.6923 3.76803C14.2822 3.33058 13.6171 3.33058 13.2068 3.76803L7.50004 9.85558L1.79326 3.76825C1.38298 3.33079 0.717978 3.33079 0.307895 3.76825C-0.102588 4.2057 -0.102588 4.91525 0.307895 5.35289L6.75746 12.2326C6.96251 12.4512 7.23131 12.5604 7.50004 12.5604Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_2573_27349">
+          <rect width="15" height="16" fill="white" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 15 0)"/>
+          </clipPath>
+          </defs>
+          </svg>
+          
+        </div>
+    </div>
+   
+    {% endif %}
+  {% endfor %}
+  <div class="bg-white shadow border border-v-offwhite rounded-lg persona-options py-3 hidden absolute top-[80px] w-full z-10">
+    {% for item in module.personas %}
+    
+    <div class="cursor-pointer px-6 py-3 hover:bg-v-offwhite persona-option {% if loop.first %} active {% endif %}">
+      {{ item.dropwdown_text }}
+    </div>
+    
+  {% endfor %}
+  </div>
+</div>
+
+{% for item in module.personas %}
+<div class="persona-layout {% if loop.first %} active show {% endif %} duration-200 ease-in-out transition-all opacity-0 hidden translate-y-1">
+  {% for row in item.rows %}
+  <div class="persona-row flex flex-wrap justify-between even:flex-row-reverse mb-12 items-center">
+    <div class="md:w-6/12 lg:w-5/12 mb-6 md:mb-0">
+      {% if row.image.src %}
+			
+			 {% set loadingAttr = row.image.loading != 'disabled' ? 'loading="{{ row.image.loading }}"' : '' %}
+		
+	
+      <img class="shadow-[0_0_21px_0_rgba(0,0,0,0.15)] rounded-lg" src="{{row.image.src}}" alt="{{row.title}} thumbnail graphic" {{ loadingAttr }}>
+      {% endif %}
+    </div>
+    <div class="md:w-6/12 lg:w-5/12">
+   
+      <h3 class="text-[32px] text-[#2F2F35] mb-2">{{row.title}}</h3>
+      <p class="text-[18px]">
+        {{row.paragraph}}
+      </p>
+      {%if loop.last %}
+      <a class="text-link-purple mt-6 inline-block" href="https://app.verta.ai/" rel="noopener" target="_blank">Sign up to try Verta's free Model Catalog today</a>
+      {% endif %}
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}

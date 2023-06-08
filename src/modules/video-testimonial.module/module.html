@@ -1,0 +1,31 @@
+<div class="video_testimonial-container">
+  <div class="grid">
+    <div class="slider-wrapper col-2">
+      <div class="flex flex-col items-end video-wrapper">
+        <div class="flex thumbnail-wrapper">
+          <div id="playButton" class="f-dir-col f-align-center f-justify-center thumbnail" style="background: center / cover no-repeat url('{{ module.thumbnail_image.src }}');">
+            <img loading="lazy" src="https://f.hubspotusercontent20.net/hubfs/5747173/01-brand-identity/icons/icon-play-button.svg" alt="Play Button">
+          </div>
+          <div class="embed-wrapper" data-src-attribute="https://player.vimeo.com/video/{{ module.vimeo_id }}?h=bc04fcd9a9&title=0&byline=0&portrait=0">
+            
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <p class="uppercase text-[14px] tracking-wider text-v-purple font-bold  mb-[30px] pl-[30px]">
+          {{ module.eyebrow }}
+        </p>
+        <div class=" quote-wrapper">
+          <div class=" pl-[30px] quote">
+            <p class="p3 mb-3">
+              {{ module.quote }}
+            </p>
+            <p class="text-[14px] font-bold mb-0">
+              {{ module.quote_attribute }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

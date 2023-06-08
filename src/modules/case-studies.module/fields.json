@@ -1,0 +1,149 @@
+[
+  {
+   "children": [
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "id": "75f773b5-d61a-38e1-6191-52a7dc31577b",
+     "label": "Logo",
+     "locked": false,
+     "name": "logo",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "c2ddcbd5-9f44-96ad-de23-56b3d84627ec",
+     "label": "Paragraph",
+     "locked": false,
+     "name": "paragraph",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "children": [
+      {
+       "allow_new_line": false,
+       "display_width": null,
+       "id": "9c640656-317c-abda-ec8a-f38c3704186e",
+       "label": "CTA Text",
+       "locked": false,
+       "name": "cta_text",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "display_width": null,
+       "id": "0b0b2266-ffea-2fa9-9271-dbdc1cc810af",
+       "label": "CTA Link",
+       "locked": false,
+       "name": "cta_link",
+       "required": false,
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG"
+       ],
+       "type": "url"
+      }
+     ],
+     "default": {
+      "cta_link": {
+       "content_id": null,
+       "href": "",
+       "type": "EXTERNAL"
+      }
+     },
+     "display_width": null,
+     "expanded": false,
+     "id": "a4a482fe-aea2-84bf-e731-e3b9163c15f0",
+     "label": "CTA",
+     "locked": false,
+     "name": "cta",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    }
+   ],
+   "default": [
+    {
+     "logo": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "cta": {
+      "cta_link": {
+       "content_id": null,
+       "href": "",
+       "type": "EXTERNAL"
+      }
+     }
+    },
+    {
+     "logo": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "cta": {
+      "cta_link": {
+       "content_id": null,
+       "href": "",
+       "type": "EXTERNAL"
+      }
+     }
+    },
+    {
+     "logo": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "cta": {
+      "cta_link": {
+       "content_id": null,
+       "href": "",
+       "type": "EXTERNAL"
+      }
+     }
+    }
+   ],
+   "display_width": null,
+   "expanded": false,
+   "id": "ccd4c07a-ea0c-d3e4-9b56-33b6fda3ba34",
+   "label": "Company",
+   "locked": false,
+   "name": "company",
+   "occurrence": {
+    "default": 3,
+    "sorting_label_field": "75f773b5-d61a-38e1-6191-52a7dc31577b"
+   },
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  }
+ ]

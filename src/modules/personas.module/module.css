@@ -1,0 +1,15 @@
+.persona-select.active .persona-caret {
+  transform: rotate(180deg);
+}
+
+.persona-option.active {
+  background-color:#f5f4f7;
+}
+.persona-layout.active {
+  display:block;
+}
+
+.persona-layout.active.show {
+  opacity:1;
+  transform: translateY(0);
+}

@@ -1,0 +1,64 @@
+[ {
+  "id" : "69573160-4a40-480f-8a9f-1364af8e8f2e",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5747173/04-module-contents/logo-slider/Scribd.svg",
+    "alt" : "Scribd",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5747173/04-module-contents/logo-slider/Scribd.svg",
+    "alt" : "Scribd",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5747173/04-module-contents/logo-slider/Scribd.svg",
+    "alt" : "Scribd",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5747173/04-module-contents/logo-slider/Scribd.svg",
+    "alt" : "Scribd",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5747173/04-module-contents/logo-slider/Scribd.svg",
+    "alt" : "Scribd",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  } ]
+} ]

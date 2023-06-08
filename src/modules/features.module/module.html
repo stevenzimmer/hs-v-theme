@@ -1,0 +1,25 @@
+
+<div class="flex flex-wrap justify-center sm:justify-start">
+  {% for item in module.feature %}
+  <div class="w-11/12 sm:w-1/2 lg:w-1/4 px-12 sm:px-6 mb-[35px] lg:mb-0 {% if !loop.last %} lg:border-r {% endif %}">
+    <div class="mb-6">
+      {% if item.icon.src %}
+        {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+        {% if item.icon.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.icon.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+          {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+        <img class="mx-auto sm:mx-0" src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+    <p class="font-bold text-[#2F2F35] text-[20px] mb-3 text-center sm:text-left">
+      {{ item.title }}
+    </p>
+    <p class="text-center sm:text-left">
+      {{ item.paragraph }}
+    </p>
+  </div>
+  {% endfor %}
+</div>

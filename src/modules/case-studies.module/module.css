@@ -1,0 +1,31 @@
+/* .case_studies-container .case_study-wrapper > h2 {
+  max-width: 600px;
+}
+
+.case_studies-container .logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 220px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .case_studies-container .company .p3 {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 500px) {
+  .case_studies-container .case_study-wrapper > h2 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  
+  .case_studies-container .company {
+    margin-top: 30px;
+  }
+} */

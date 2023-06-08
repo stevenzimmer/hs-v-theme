@@ -1,0 +1,17 @@
+{
+    "label": "V Theme",
+    "author": {
+        "name": "Verta",
+        "url": "https://www.verta.ai/"
+    },
+    "enable_domain_stylesheets": false,
+    "responsive_breakpoints": [
+        {
+            "name": "mobile",
+            "mediaQuery": "@media (max-width: 1100px)",
+            "previewWidth": {
+                "value": 1100
+            }
+        }
+    ]
+}

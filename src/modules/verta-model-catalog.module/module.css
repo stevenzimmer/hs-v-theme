@@ -1,0 +1,25 @@
+/* .integrations-row.active .row-title {
+  color: #514EB5;
+}
+
+.integrations-row.active .row-caret circle {
+  stroke: #514EB5;
+}
+.integrations-row.active .row-caret path {
+  fill: #514EB5;
+}
+
+.integrations-row.active .row-icon  {
+  background-color: #514EB5;
+} */
+.vmc-row .vmc-row-description {
+  display:none;
+}
+
+.vmc-row.active .vmc-row-description {
+  display:block;
+}
+
+.vmc-row.active .vmc-row-caret {
+  transform: rotate(180deg)
+}

@@ -1,0 +1,39 @@
+[
+  {
+   "type": "group",
+   "id": "75a1bf63-c130-232c-c041-c9f2b3005ddd",
+   "label": "Table Rows",
+   "children": [
+    {
+     "type": "text",
+     "id": "d58b8a9d-2f8c-e6fc-4525-e7b361beb4c8",
+     "validation_regex": "",
+     "label": "Title",
+     "name": "title",
+     "default": ""
+    },
+    {
+     "type": "text",
+     "id": "c6d40647-49f4-0bab-0b50-a3edae692bf7",
+     "validation_regex": "",
+     "label": "Tooltip",
+     "name": "tooltip"
+    },
+    {
+     "type": "text",
+     "id": "90300830-1689-52ab-f789-926142b3d4c2",
+     "validation_regex": "",
+     "label": "Columns",
+     "name": "columns",
+     "default": "",
+     "occurrence": {}
+    }
+   ],
+   "name": "table_rows",
+   "default": {
+    "title": "",
+    "columns": ""
+   },
+   "occurrence": {}
+  }
+ ]

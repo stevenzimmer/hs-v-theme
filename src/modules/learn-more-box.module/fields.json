@@ -1,0 +1,60 @@
+[
+    {
+        "type": "text",
+        "id": "f49082b4-d8a8-bb1a-5b8c-d08af46f0faa",
+        "validation_regex": "",
+        "label": "Header",
+        "name": "learn_more_box_header",
+        "default": "Learn more about Operational AI"
+    },
+    {
+        "type": "group",
+        "id": "76a7b7f5-34a6-c463-a392-0fe3019de59c",
+        "label": "Learn more Links",
+        "children": [
+            {
+                "type": "link",
+                "id": "37560278-ae78-c1fd-9df3-62f7ac237e0a",
+                "default": {
+                    "url": {
+                        "content_id": null,
+                        "type": "EXTERNAL",
+                        "href": ""
+                    },
+                    "open_in_new_tab": false,
+                    "no_follow": false
+                },
+                "supported_types": [
+                    "EXTERNAL",
+                    "CONTENT",
+                    "FILE",
+                    "EMAIL_ADDRESS",
+                    "BLOG",
+                    "CALL_TO_ACTION"
+                ],
+                "label": "Link",
+                "name": "learn_more_box_link"
+            },
+            {
+                "type": "text",
+                "id": "fbf55079-a249-682d-d805-ab45f2d8db7a",
+                "validation_regex": "",
+                "label": "Link Text",
+                "name": "learn_more_box_link_text"
+            }
+        ],
+        "name": "learn_more_links",
+        "default": {
+            "learn_more_box_link": {
+                "url": {
+                    "content_id": null,
+                    "type": "EXTERNAL",
+                    "href": ""
+                },
+                "open_in_new_tab": false,
+                "no_follow": false
+            }
+        },
+        "occurrence": {}
+    }
+]

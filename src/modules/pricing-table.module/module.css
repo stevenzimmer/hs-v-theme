@@ -1,0 +1,37 @@
+
+
+/* Show the tooltip on hover */
+/* .special-text:hover .special-text__tooltip {
+  visibility: visible;
+  opacity: 1;
+} */
+
+.special-text__tooltip {  
+  bottom: 100%;
+  margin-bottom: 4px;
+  border: 2px solid #E3E3E8;
+}
+
+/* The bordered part of the triangle */
+
+.special-text__tooltip::before,
+.special-text__tooltip::after {
+  content: "";
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: 100%;
+  left: 9px;
+}
+
+.special-text__tooltip::before {
+  border-top: 6px solid #E3E3E8;
+  margin-top: 2px;
+}
+
+/* The white fill of the triangle */
+.special-text__tooltip::after {
+  border-top: 6px solid white;
+  /* margin-top: -2px; */
+  z-index: 1;
+}

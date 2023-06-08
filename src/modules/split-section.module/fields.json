@@ -1,0 +1,28 @@
+[
+    {
+        "type": "text",
+        "id": "40d1a78e-d5d5-5bb7-e091-c2538f52b370",
+        "validation_regex": "",
+        "label": "Highlighted text",
+        "name": "split_box_highlighted_text",
+        "default": "“Verta just works.”"
+    },
+    {
+        "type": "text",
+        "id": "acda491e-adfc-2142-9965-b650318972eb",
+        "validation_regex": "",
+        "label": "Subtext",
+        "name": "split_box_subtext",
+        "default": "Data Science Leader at Fortune 100 Insurance Company"
+    },
+    {
+        "default": "<h3 style=\"font-size: 24px;\">Real customers, real results</h3>\n<p>A Fortune 100 insurance company used Verta to streamline model deployment, reduce MLOps headcount by 75%, and gave them full visibility and control over their machine learning assets by consolidating multiple homegrown systems for model deployment.</p>\n<p>A top-20 US auto insurance company is using Verta to enable real-time machine learning, which let the company launch its first-ever real-time AI applications.</p>",
+        "display_width": null,
+        "id": "text",
+        "label": "Right box",
+        "locked": false,
+        "name": "split_box_right",
+        "required": false,
+        "type": "richtext"
+    }
+]
