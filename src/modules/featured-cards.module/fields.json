@@ -1,0 +1,128 @@
+[
+  {
+   "type": "group",
+   "id": "f19095aa-e7d7-f615-1b28-09f3630aa463",
+   "label": "Card",
+   "children": [
+    {
+     "type": "image",
+     "id": "98651470-e684-d0c5-8a88-2d37afa858d9",
+     "default": {
+      "size_type": "auto",
+      "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/featured-card-placeholder.jpg",
+      "alt": "featured-card-placeholder",
+      "loading": "lazy",
+      "width": 533,
+      "height": 368,
+      "max_width": 533,
+      "max_height": 368
+     },
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "label": "Image",
+     "name": "image"
+    },
+    {
+     "type": "text",
+     "id": "5c528b39-7ed0-5e60-5483-96da5e95d448",
+     "validation_regex": "",
+     "label": "Label",
+     "name": "card_label",
+     "default": "Virtual Event • June 28, 2023"
+    },
+    {
+     "type": "text",
+     "id": "5b117cb0-d097-72f6-11d6-edf47a5b63de",
+     "validation_regex": "",
+     "label": "Header",
+     "name": "header",
+     "default": "Join our live demo on Custom Attributes "
+    },
+    {
+     "type": "group",
+     "id": "9bf5a5fe-20e0-1d64-c9f1-6ee7205cfddc",
+     "label": "CTA",
+     "children": [
+      {
+       "type": "link",
+       "id": "910c4dd8-ddc6-303e-d4ee-061abbb06be9",
+       "default": {
+        "url": {
+         "content_id": null,
+         "type": "EXTERNAL",
+         "href": ""
+        },
+        "open_in_new_tab": false,
+        "no_follow": false
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "Link",
+       "name": "link"
+      },
+      {
+       "type": "text",
+       "id": "e7e8a2ce-a61c-7b6c-a11e-a782c22f8929",
+       "validation_regex": "",
+       "label": "Text",
+       "name": "text",
+       "default": "Sign Up Today"
+      }
+     ],
+     "name": "cta",
+     "default": {
+      "link": {
+       "url": {
+        "content_id": null,
+        "type": "EXTERNAL",
+        "href": ""
+       },
+       "open_in_new_tab": false,
+       "no_follow": false
+      },
+      "text": "Sign Up Today"
+     }
+    }
+   ],
+   "name": "card",
+   "default": {
+    "image": {
+     "size_type": "auto",
+     "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/featured-card-placeholder.jpg",
+     "alt": "featured-card-placeholder",
+     "loading": "lazy",
+     "width": 533,
+     "height": 368,
+     "max_width": 533,
+     "max_height": 368
+    },
+    "card_label": "Virtual Event • June 28, 2023",
+    "header": "Join our live demo on Custom Attributes ",
+    "cta": {
+     "link": {
+      "url": {
+       "content_id": null,
+       "type": "EXTERNAL",
+       "href": ""
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
+     },
+     "text": "Sign Up Today"
+    }
+   },
+   "occurrence": {
+    "max": 4
+   }
+  }
+ ]

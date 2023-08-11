@@ -1,0 +1,36 @@
+[
+  {
+   "type": "text",
+   "id": "aac36a74-c13d-95de-9e6d-d3b51f229110",
+   "validation_regex": "",
+   "label": "Text",
+   "name": "text",
+   "default": "Check out AIAD and sign up today"
+  },
+  {
+   "type": "link",
+   "id": "64cd17b1-49e6-47a1-636c-9e734cde8a38",
+   "default": {
+    "url": {
+     "content_id": null,
+     "href": "https://app.verta.ai/",
+     "type": "EXTERNAL"
+    },
+    "open_in_new_tab": true,
+    "no_follow": false
+   },
+   "supported_types": [
+    "EXTERNAL",
+    "CONTENT",
+    "FILE",
+    "EMAIL_ADDRESS",
+    "BLOG",
+    "CALL_TO_ACTION",
+    "PHONE_NUMBER",
+    "WHATSAPP_NUMBER",
+    "PAYMENT"
+   ],
+   "label": "Link",
+   "name": "link"
+  }
+ ]

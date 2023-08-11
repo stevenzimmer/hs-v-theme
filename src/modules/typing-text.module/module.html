@@ -1,0 +1,10 @@
+{% require_js %} 
+<script>
+  var dataText = [ {% for item in module.typed_words %}{% if loop.last %}"{{ item }}"{% else %}"{{ item }}", {% endif %}{% endfor %}];
+</script>
+{% end_require_js %}
+    
+<h2 class="mb-0 md:text-[46px] md:leading-[54px]">
+  {{ module.headline }} <span id="wordWrapper"></span>
+</h2>
+      

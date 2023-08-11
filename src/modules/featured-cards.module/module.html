@@ -1,0 +1,47 @@
+<!-- module html  -->
+<div class="flex flex-wrap justifty-center items-stretch sm:-mx-3">
+{% for item in module.card %}
+{% set href = item.cta.link.url.href %}
+	{% if item.cta.link.url.type is equalto "EMAIL_ADDRESS" %}
+		{% set href = "mailto:" + href %}
+	{% endif %}
+
+  <div class="w-11/12 sm:w-1/2 lg:w-1/4 px-3 mb-6 lg:mb-0">
+    <div class="p-2 pb-4 rounded-[8px] hover:shadow-md h-full group relative transition-shadow duration-200">
+      <a class="absolute w-full h-full inset-0 z-20" href="{{ href }}"
+      {% if item.cta.link.open_in_new_tab %}target="_blank"{% endif %}
+      {% if item.cta.link.rel %}rel="{{ item.cta.link.rel }}"{% endif %}
+      ></a>
+      {% if item.image.src %}
+      <div class="h-[180px] w-full">
+        {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+        {% if item.image.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+        <img class="rounded-[8px] w-full !h-full object-cover" src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      </div>
+      {% endif %}
+      <div class="px-2">
+        <p class="text-[#5D687D] text-[16px] my-2">{{ item.card_label }}</p>
+        <h3 class="text-[18px] text-[#2F2F35] leading-normal font-medium">
+          {{ item.header }}
+        </h3>
+
+        {% set href = item.cta.link.url.href %}
+        {% if item.cta.link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+        <a class="text-link-purple block mt-4 group-hover:text-[#27acf1] group-hover:border-[#27acf1]" href="{{ href }}"
+          {% if item.cta.link.open_in_new_tab %}target="_blank"{% endif %}
+          {% if item.cta.link.rel %}rel="{{ item.cta.link.rel }}"{% endif %}
+          >
+          {{ item.cta.text }}
+        </a>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>

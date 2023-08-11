@@ -12,7 +12,7 @@
 }
 
 .navigation-container .navigation-wrapper {
-  padding: 25px 0;
+  padding: 10px 0;
 }
 
 .navigation-container .logo {
@@ -38,7 +38,7 @@
 
 .navigation-container .dropdown-wrapper {
   position: absolute;
-  top: 55px;
+  top: 35px;
   width: max-content;
   display: flex;
   flex-direction: column;
@@ -86,6 +86,11 @@
     hue-rotate(160deg)
     saturate(4)
     brightness(1);
+}
+
+.navigation-container .cta-wrapper .sign_up_btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*NESTED LEVEL TEXT STYLES*/

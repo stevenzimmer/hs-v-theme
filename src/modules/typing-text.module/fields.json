@@ -1,0 +1,35 @@
+[
+  {
+   "allow_new_line": false,
+   "default": "AI & ML Model<br>Delivery",
+   "display_width": null,
+   "id": "d802d201-0d59-1897-38f8-1a0d0140fa8a",
+   "label": "Headline",
+   "locked": false,
+   "name": "headline",
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
+  },
+  {
+   "allow_new_line": false,
+   "default": [
+    "Simplified",
+    "Simplified",
+    "Simplified"
+   ],
+   "display_width": null,
+   "id": "3e20d430-0bfc-7271-8874-420dd1e5a448",
+   "label": "Typed Words",
+   "locked": false,
+   "name": "typed_words",
+   "occurrence": {
+    "default": 3
+   },
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
+  }
+ ]

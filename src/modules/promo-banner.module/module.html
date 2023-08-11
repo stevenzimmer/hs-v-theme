@@ -1,0 +1,14 @@
+<!-- module html  -->
+{% set href = module.link.url.href %}
+{% if module.link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+
+<div class="promo-banner bg-black min-h-[33px] flex items-center justify-center relative group py-1">
+  <a href="{{ href }}"
+	{% if module.link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.link.rel %}rel="{{ module.link.rel }}"{% endif %} class="absolute w-full h-full inset-0 z-10"></a>
+  <div class="container text-center">
+    <p class="text-white font-medium text-[16px]">{{ module.text }} <span class="group-hover:translate-x-0.5 transition-transform duration-200 inline-block translate-y-0.5">→</span></p>
+  </div>
+</div>
