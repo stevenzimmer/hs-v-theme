@@ -1,0 +1,94 @@
+[
+  {
+   "allow_new_line": false,
+   "default": "Insights on AI Regulations from Verta’s Experts",
+   "display_width": null,
+   "id": "a5a7d45f-957a-a0b8-366d-04ba236d5fa2",
+   "label": "Header",
+   "locked": false,
+   "name": "header",
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
+  },
+  {
+   "type": "choice",
+   "id": "a97b75b9-fe17-bf9b-4550-9d96ba8d9a61",
+   "display": "select",
+   "choices": [
+    [
+     "purple",
+     "Purple"
+    ],
+    [
+     "yellow",
+     "Yellow"
+    ]
+   ],
+   "label": "Nav Color",
+   "name": "nav_color",
+   "default": "purple"
+  },
+  {
+   "children": [
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/image%20133.jpg",
+      "alt": "image 133",
+      "loading": "lazy",
+      "width": 366,
+      "height": 244,
+      "max_width": 366,
+      "max_height": 244
+     },
+     "display_width": null,
+     "id": "8a44428c-b81e-415e-9453-613a93d3151b",
+     "label": "Image",
+     "locked": false,
+     "name": "image",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "default": "<h3 class=\"text-[24px] text-v-black font-medium\">EU AI Act Regulations Fact Sheets</h3>\n<p>The EU AI Act regulates the development, deployment and use of artificial intelligence, including Large Language Models (LLMs) and applications like ChatGPT.</p>\n<p>Verta's experts have extensively reviewed the act from a Data Science practitioner's perspective and prepared concise, actionable summaries for you to implement, including an Overview of the complete act and specific fact sheets on Data and Data Governance (Article 10) and Technical Documentation (Article 11).</p>\n<p>Download these complementary fact sheets and begin preparing for the EU AI Act today.</p>\n<a class=\"btn btn-primary bg-v-purple text-white btn-mini\" href=\"#\">Download</a>\n<p class=\"text-[24px] text-v-black font-medium\">Additional Resource <a class=\"text-link-purple text-[16px]\" href=\"#\">With EU AI Act, History Repeats, and Leaders Gain Advantage from MLM </a></p>",
+     "display_width": null,
+     "id": "text",
+     "label": "Rich text field",
+     "locked": false,
+     "name": "text",
+     "required": false,
+     "type": "richtext"
+    }
+   ],
+   "default": {
+    "image": {
+     "size_type": "auto",
+     "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/image%20133.jpg",
+     "alt": "image 133",
+     "loading": "lazy",
+     "width": 366,
+     "height": 244,
+     "max_width": 366,
+     "max_height": 244
+    },
+    "text": "<h3 class=\"text-[24px] text-v-black font-medium\">EU AI Act Regulations Fact Sheets</h3>\n<p>The EU AI Act regulates the development, deployment and use of artificial intelligence, including Large Language Models (LLMs) and applications like ChatGPT.</p>\n<p>Verta's experts have extensively reviewed the act from a Data Science practitioner's perspective and prepared concise, actionable summaries for you to implement, including an Overview of the complete act and specific fact sheets on Data and Data Governance (Article 10) and Technical Documentation (Article 11).</p>\n<p>Download these complementary fact sheets and begin preparing for the EU AI Act today.</p>\n<a class=\"btn btn-primary bg-v-purple text-white btn-mini\" href=\"#\">Download</a>\n<p class=\"text-[24px] text-v-black font-medium\">Additional Resource <a class=\"text-link-purple text-[16px]\" href=\"#\">With EU AI Act, History Repeats, and Leaders Gain Advantage from MLM </a></p>"
+   },
+   "display_width": null,
+   "expanded": false,
+   "id": "628b7bac-3c5c-c586-c8ef-97f9f8f5f4d1",
+   "label": "Slide",
+   "locked": false,
+   "name": "slide",
+   "occurrence": {
+    "sorting_label_field": "8a44428c-b81e-415e-9453-613a93d3151b"
+   },
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  }
+ ]

@@ -1,0 +1,73 @@
+<!-- module html  -->
+<!--
+  templateType: global_partial
+  label: Main Header
+-->
+{% set href = module.nav_cta.link.url.href %}
+  {% if module.nav_cta.link.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+  {% endif %}
+
+
+{% set icon_text_color = "text-[#504DB8]" %}
+{% set icon_stroke_color = "#504DB8" %}
+
+{% if module.nav_theme == "dark" %}
+  {% set icon_text_color = "text-white" %}
+  {% set icon_stroke_color = "#ffffff" %}
+
+{% endif %}
+<nav class="main-nav relative z-40">
+  <div class="container relative px-6 ">
+    <div class="flex items-center justify-between ">
+      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-2/12">
+        <div class="w-full">
+          {% if module.verta_logo.src %}
+            <a href="https://www.verta.ai/">
+            {% set sizeAttrs = 'width="{{ module.verta_logo.width }}" height="{{ module.verta_logo.height }}"' %}
+            {% if module.verta_logo.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.verta_logo.width }}" height="{{ module.verta_logo.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.verta_logo.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.verta_logo.max_width }}" height="{{ module.verta_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.verta_logo.loading != 'disabled' ? 'loading="{{ module.verta_logo.loading }}"' : '' %}
+            <img src="{{ module.verta_logo.src }}" alt="{{ module.verta_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          </a>
+        </div>
+      </div>
+      <div class="w-1/2 sm:w-2/3 md:w-3/4 lg:w-10/12">
+        <div class="lg:hidden flex justify-end ">
+          <div id="mobile-nav-trigger" class="cursor-pointer pr-4">
+            <div id="mobile-nav-close" class="hidden">
+              <svg class="w-[30px] {{icon_text_color}}"  stroke="currentColor" fill="currentColor"
+             stroke-width="0" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="{{icon_stroke_color}}" stroke-width="2" d="M3,3 L21,21 M3,21 L21,3"></path></svg>
+            </div>
+
+            <div id="mobile-nav-open" class="">
+              <svg class="w-[30px] {{icon_text_color}}" stroke="currentColor" fill="currentColor"
+               stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path stroke="{{icon_stroke_color}}" d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg>
+            </div>
+            
+          </div>
+        </div>
+        <div class="w-full lg:flex items-center justify-between absolute right-0 bg-white top-[77px]  lg:static lg:bg-transparent translate-x-full lg:translate-x-0 main-nav-menu lg:pb-0 overflow-y-scroll lg:overflow-visible h-screen lg:h-full z-50 " id="main-nav-menu">
+          <div class="w-full lg:w-3/4 p-6 lg:p-0 nav-theme-{{ module.nav_theme }}">
+            {% simple_menu menu_tree="{{ module.menu }}" %}
+          </div>
+          <div class="w-full lg:w-1/4 px-6 lg:p-0">
+            <div class="flex lg:justify-end">
+           
+              <div class="text-center">
+                <a href="{{ href }}"
+              {% if module.nav_cta.link.open_in_new_tab %}target="_blank"{% endif %}
+              {% if module.nav_cta.link.rel %}rel="{{ module.nav_cta.link.rel }}"{% endif %} class="btn btn-secondary !border-v-blue bg-v-blue text-white sign_up_btn">{{ module.nav_cta.text }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+

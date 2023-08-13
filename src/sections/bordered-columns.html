@@ -1,0 +1,180 @@
+<!--
+ templateType: section
+ label: Bordered Columns
+ isAvailableForNewContent: true
+ screenshotPath: ../images/bordered-columns-section.png
+-->
+<!-- Begin partial -->
+{% dnd_section
+  class="bordered-columns-section",
+  max_width=1200,
+  padding={
+    "default" : {
+      "bottom" : "80px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=4,
+    padding={
+      "default" : {
+        "bottom" : "20px",
+        "left" : "20px",
+        "right" : "20px",
+        "top" : "20px"
+      }
+    }
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/linked_image",
+        offset=0,
+        width=12,
+        horizontal_alignment="LEFT",
+        img={
+          "alt" : "icon-centralized-model-inventory",
+          "height" : 68,
+          "loading" : "lazy",
+          "max_height" : 135,
+          "max_width" : 120,
+          "size_type" : "exact",
+          "src" : "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/icon-centralized-model-inventory.png",
+          "width" : 60
+        }
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+        {% module_attribute "html" %}
+          <h3 style="font-weight: bold; font-size: 20px;"><span style="color: #000000;">Centralized Model Inventory</span></h3>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+        {% module_attribute "html" %}
+          <p style="font-size: 16px; font-weight: normal;"><span style="color: #5d687d;">Single, searchable source of truth for models, including model cards with rich metadata and tagging of models with risk attributes</span></p>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+  {% dnd_column
+    offset=4,
+    width=4,
+    padding={
+      "default" : {
+        "bottom" : "20px",
+        "left" : "20px",
+        "right" : "20px",
+        "top" : "20px"
+      }
+    }
+  %}
+  {% dnd_row %}
+    {% dnd_module
+      path="@hubspot/linked_image",
+      offset=0,
+      width=12,
+      horizontal_alignment="LEFT",
+      img={
+        "alt" : "icon-configure-lifecycle-controls",
+        "height" : 68,
+        "loading" : "lazy",
+        "max_height" : 135,
+        "max_width" : 120,
+        "size_type" : "exact",
+        "src" : "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/icon-configure-lifecycle-controls.png",
+        "width" : 60
+      }
+    %}
+    {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% dnd_row %}
+    {% dnd_module
+      path="@hubspot/rich_text",
+      offset=0,
+      width=12
+    %}
+      {% module_attribute "html" %}
+        <h3 style="font-weight: bold; font-size: 20px;"><span style="color: #000000;">Configurable Lifecycle Controls</span></h3>
+      {% end_module_attribute %}
+    {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% dnd_row %}
+    {% dnd_module
+      path="@hubspot/rich_text",
+      offset=0,
+      width=12
+    %}
+      {% module_attribute "html" %}
+        <p style="font-size: 16px; font-weight: normal;"><span style="color: #5d687d;">Standardized model lifecycle workflows and configurable governance checklists to enforce policies and ensure compliance with Responsible AI</span></p>
+      {% end_module_attribute %}
+    {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% end_dnd_column %}
+  {% dnd_column
+    offset=8,
+    width=4,
+    padding={
+      "default" : {
+        "bottom" : "20px",
+        "left" : "20px",
+        "right" : "20px",
+        "top" : "20px"
+      }
+    }
+  %}
+  {% dnd_row %}
+    {% dnd_module
+      path="@hubspot/linked_image",
+      offset=0,
+      width=12,
+      horizontal_alignment="LEFT",
+      img={
+        "alt" : "icon-robust-model-documentation",
+        "height" : 68,
+        "loading" : "lazy",
+        "max_height" : 135,
+        "max_width" : 120,
+        "size_type" : "exact",
+        "src" : "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/icon-robust-model-documentation.png",
+        "width" : 60
+      }
+    %}
+    {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% dnd_row %}
+    {% dnd_module
+      path="@hubspot/rich_text",
+      offset=0,
+      width=12
+    %}
+      {% module_attribute "html" %}
+        <h3 style="font-weight: bold; font-size: 20px;"><span style="color: #000000;">Robust Model Documentation</span></h3>
+      {% end_module_attribute %}
+    {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% dnd_row %}
+    {% dnd_module
+      path="@hubspot/rich_text",
+      offset=0,
+      width=12
+    %}
+      {% module_attribute "html" %}
+        <p style="font-size: 16px; font-weight: normal;"><span style="color: #5d687d;">AI Assisted Documentation and model lifecycle tracking across experimentation,  deployment and retirement, supporting auditability and explainability</span></p>
+      {% end_module_attribute %}
+    {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+<!-- End partial -->

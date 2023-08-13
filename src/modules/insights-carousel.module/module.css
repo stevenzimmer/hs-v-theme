@@ -1,0 +1,14 @@
+.insights-carousel-text p,
+.insights-carousel-text h3,
+.insights-carousel-text .btn,
+.insights-carousel-text ul,
+.insights-carousel-text li {
+  margin-bottom: 10px;
+}
+
+.insights-carousel-text p,
+.insights-carousel-text li, {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #5D687D
+}

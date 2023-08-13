@@ -1,3 +1,27 @@
 .bg-grid-texture {
   @apply overflow-hidden;
 }
+
+.dnd-no-nav .row-fluid-wrapper {
+  @apply relative;
+}
+
+
+.bordered-columns-section {
+  .row-fluid {
+    > .dnd-column {
+      @apply border border-[#E3E3E8] border-solid rounded-xl;
+    }
+  }
+}
+
+.divider-columns-section {
+  .row-fluid {
+    .span4 {
+      @apply lg:w-1/3 px-6;
+    }
+    > .dnd-column {
+      @apply lg:border-r lg:border-r-[#E3E3E8] last:border-transparent border-solid;
+    }
+  }
+}

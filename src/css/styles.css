@@ -1,11 +1,13 @@
 @import "./main.css";
 @import "./_layouts.css";
 @import "./_dnd.css";
-@import "./_typography.css";
+/* @import "./_typography.css"; */
 @import "./_imgs.css";
 @import "./_sections.css";
 @import "./_modules.css";
 @import "./_btns.css";
+@import "./_nav.css";
+
 
 
 body {

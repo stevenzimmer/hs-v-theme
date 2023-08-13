@@ -1,0 +1,186 @@
+[
+  {
+   "type": "choice",
+   "id": "6db43372-6e76-f765-6b21-ad26d843365d",
+   "display": "select",
+   "choices": [
+    [
+     "light",
+     "Light"
+    ],
+    [
+     "dark",
+     "Dark"
+    ]
+   ],
+   "label": "Nav Theme",
+   "name": "nav_theme",
+   "default": "dark"
+  },
+  {
+   "type": "image",
+   "id": "111c9495-2de2-47cb-0dd5-a377bdfc7294",
+   "default": {
+    "size_type": "auto",
+    "src": "https://5747173.fs1.hubspotusercontent-na1.net/hubfs/5747173/verta-logo-email.png",
+    "alt": "verta-logo-email",
+    "loading": "lazy",
+    "width": 128,
+    "height": 40,
+    "max_width": 128,
+    "max_height": 40
+   },
+   "resizable": true,
+   "responsive": true,
+   "show_loading": false,
+   "label": "Verta Logo",
+   "name": "verta_logo"
+  },
+  {
+   "type": "simplemenu",
+   "id": "3e89da45-f4a9-66c5-3642-979b911e158a",
+   "default": [
+    {
+     "isPublished": true,
+     "pageLinkId": 56387642503,
+     "contentGroupId": null,
+     "pageLinkName": "Overview",
+     "isDeleted": false,
+     "categoryId": 1,
+     "subCategory": "site_page",
+     "contentType": "site_page",
+     "state": "PUBLISHED_OR_SCHEDULED",
+     "linkLabel": "Platform",
+     "linkUrl": null,
+     "linkParams": null,
+     "linkTarget": null,
+     "type": "PAGE_LINK",
+     "children": []
+    },
+    {
+     "isPublished": true,
+     "pageLinkId": 108389250942,
+     "contentGroupId": null,
+     "pageLinkName": "Pricing [redesign]",
+     "isDeleted": false,
+     "categoryId": 1,
+     "subCategory": "site_page",
+     "contentType": "site_page",
+     "state": "PUBLISHED_OR_SCHEDULED",
+     "linkLabel": "Pricing",
+     "linkUrl": null,
+     "linkParams": null,
+     "linkTarget": null,
+     "type": "PAGE_LINK",
+     "children": []
+    },
+    {
+     "isPublished": false,
+     "pageLinkId": null,
+     "contentGroupId": null,
+     "pageLinkName": null,
+     "isDeleted": null,
+     "categoryId": null,
+     "subCategory": null,
+     "contentType": null,
+     "state": null,
+     "linkLabel": "Resources",
+     "linkUrl": null,
+     "linkParams": null,
+     "linkTarget": null,
+     "type": "PAGE_LINK",
+     "children": []
+    },
+    {
+     "isPublished": true,
+     "pageLinkId": 60391599522,
+     "contentGroupId": null,
+     "pageLinkName": "About Us 11.23",
+     "isDeleted": false,
+     "categoryId": 1,
+     "subCategory": "site_page",
+     "contentType": "site_page",
+     "state": "PUBLISHED_OR_SCHEDULED",
+     "linkLabel": "About",
+     "linkUrl": null,
+     "linkParams": null,
+     "linkTarget": null,
+     "type": "PAGE_LINK",
+     "children": []
+    },
+    {
+     "isPublished": true,
+     "pageLinkId": 56396415039,
+     "contentGroupId": null,
+     "pageLinkName": "Contact Us",
+     "isDeleted": false,
+     "categoryId": 1,
+     "subCategory": "site_page",
+     "contentType": "site_page",
+     "state": "PUBLISHED_OR_SCHEDULED",
+     "linkLabel": "Contact",
+     "linkUrl": null,
+     "linkParams": null,
+     "linkTarget": null,
+     "type": "PAGE_LINK",
+     "children": []
+    }
+   ],
+   "label": "Menu",
+   "name": "menu"
+  },
+  {
+   "type": "group",
+   "id": "0fcb8cc3-d8d1-7372-59ca-e440f464750a",
+   "label": "Nav CTA",
+   "children": [
+    {
+     "type": "text",
+     "id": "85bb350b-98c6-d453-5829-8468bd96e6c1",
+     "validation_regex": "",
+     "label": "Text",
+     "name": "text",
+     "default": "Schedule a Demo"
+    },
+    {
+     "type": "link",
+     "id": "a02cf25c-9c3c-cc02-d4b5-66de9002c224",
+     "default": {
+      "url": {
+       "content_id": 57475990336,
+       "href": null,
+       "type": "CONTENT"
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
+     },
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG",
+      "CALL_TO_ACTION",
+      "PHONE_NUMBER",
+      "WHATSAPP_NUMBER",
+      "PAYMENT"
+     ],
+     "label": "Link",
+     "name": "link"
+    }
+   ],
+   "name": "nav_cta",
+   "default": {
+    "text": "Schedule a Demo",
+    "link": {
+     "url": {
+      "content_id": 57475990336,
+      "href": null,
+      "type": "CONTENT"
+     },
+     "open_in_new_tab": false,
+     "no_follow": false
+    }
+   }
+  }
+ ]

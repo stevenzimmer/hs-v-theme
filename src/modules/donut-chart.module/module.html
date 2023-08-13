@@ -1,0 +1,35 @@
+<!-- module html  -->
+{% set num = module.number %}
+{% set r = 30 %}
+{% set percentage = num / 100 %}
+{% set dashArray = 2 * 3.141519 * r %}
+{% set dashOffset = dashArray - (dashArray * percentage) %}
+
+<div class="relative">
+  <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+    <div class="donut-number">{{num}}<span class="donut-percent">%</span></div>
+  </div>
+  <svg width="100%" height="100%" viewBox="0 0 100 100">
+    <circle id="circle" cx="50" cy="50" r="{{r}}" stroke="{{ module.color.color }}" 
+    stroke-opacity="{{ module.color.opacity / 100 }}"
+    stroke-width="15" fill="transparent"  stroke-dasharray="{{dashArray}}" stroke-dashoffset="{{dashOffset}}"  transform='rotate(0 50 50)' />
+    <circle cx="50" cy="50" r="{{r}}" stroke="#18319F" stroke-opacity="0.12"  stroke-width="15" fill="transparent" stroke-dasharray="360" stroke-dashoffset="{{dashOffset}}" />
+  
+  </svg>
+</div>
+<!-- 
+<script>
+  const filled = 0;
+	const animationDuration = 2000;
+	const angle = (filled * 360 / 100);
+	const currentDuration = animationDuration * {{num}};
+	const delay = animationDuration * filled / 100;
+
+	circle.style.transition = "stroke-dashoffset "+currentDuration+"ms linear "+delay+"ms";
+	circle.setAttribute("transform","rotate("+(angle)+" "+cx+" "+cy+")");
+
+	filled+= {{num}};
+	setTimeout(function(){
+		circle.style["stroke-dashoffset"] = {{dashOffset}};
+	},100);
+</script> -->

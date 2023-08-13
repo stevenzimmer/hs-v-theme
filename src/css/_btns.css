@@ -10,10 +10,23 @@
 
 .btn {
  @apply border-2 border-v-purple md:min-w-[140px] py-4;
+  &-yellow {
+    @apply bg-v-yellow text-v-black border-v-yellow;
+    &:hover {
+      @apply bg-v-yellow bg-opacity-80 border-v-yellow !important;
+    }
+  }
   &-ghost {
     @apply bg-white border-2 border-v-purple text-v-purple;
     &:hover {
-      @apply border-v-blue text-white ;
+      @apply border-v-blue text-white;
+    }
+
+    &-yellow {
+      @apply border-v-yellow text-black;
+      &:hover {
+        @apply bg-v-yellow border-v-yellow text-black !important;
+      }
     }
   }
 

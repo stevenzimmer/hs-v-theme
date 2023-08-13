@@ -1,0 +1,77 @@
+[
+  {
+   "type": "color",
+   "id": "3380f2b5-3ed3-e17f-7097-d1553577ee98",
+   "default": {
+    "color": "#FED257",
+    "opacity": 100
+   },
+   "label": "Bubble Color",
+   "name": "bubble_color"
+  },
+  {
+   "type": "number",
+   "id": "db784429-afda-3e92-9d67-354a4f7ea0cb",
+   "display": "text",
+   "step": 1,
+   "label": "Width/height",
+   "name": "width_height",
+   "default": 600
+  },
+  {
+   "choices": [
+    [
+     "left",
+     "Left"
+    ],
+    [
+     "center",
+     "Center"
+    ],
+    [
+     "right",
+     "Right"
+    ]
+   ],
+   "default": "left",
+   "display": "radio",
+   "display_width": null,
+   "id": "39b52964-f9be-7729-f5ea-be7c217b7515",
+   "label": "Bubble Position",
+   "locked": false,
+   "multiple": false,
+   "name": "texture_position",
+   "preset": null,
+   "reordering_enabled": true,
+   "required": false,
+   "type": "choice"
+  },
+  {
+   "default": 0,
+   "display": "text",
+   "display_width": null,
+   "id": "da5fc715-2618-1f73-a902-19d5a8529e06",
+   "label": "X axis",
+   "locked": false,
+   "max": 100,
+   "min": -100,
+   "name": "x_axis",
+   "required": false,
+   "step": 1,
+   "type": "number"
+  },
+  {
+   "default": -50,
+   "display": "text",
+   "display_width": null,
+   "id": "d79bb44c-1ce5-ad8f-23e6-aac2fea51e07",
+   "label": "Y Axis",
+   "locked": false,
+   "max": 100,
+   "min": -100,
+   "name": "y_axis",
+   "required": false,
+   "step": 1,
+   "type": "number"
+  }
+ ]

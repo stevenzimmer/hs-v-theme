@@ -9,6 +9,7 @@ module.exports = {
         "./src/partials/**/*.html",
         "./src/templates/**/*.html",
         "./src/sections/**/*.html",
+        "./src/extra-classes.txt"
 
     ],
     theme: {
@@ -21,6 +22,7 @@ module.exports = {
                     blue: "#27acf1",
                     body: "#4D4D50",
                     black: "#2F2F35",
+                    yellow: "#FED257",
                 },
             },
         },

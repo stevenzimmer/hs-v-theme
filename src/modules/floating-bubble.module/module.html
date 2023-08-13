@@ -1,0 +1,19 @@
+<!-- module html  -->
+<!-- module html  -->
+
+{% set position = "" %}
+
+  {% if module.texture_position == "center" %}
+    {% set position = "right: 50%;" %}
+  {% endif  %}
+  
+  {% if module.texture_position == "right" %}
+   {% set position = "right: 0;" %}
+  {% endif  %}
+  <div class="">
+    <div class="absolute top-0 z-0" style="transform: translate({{ module.x_axis }}%, {{ module.y_axis }}%); {{position}}" >
+    <div class="rounded-full" style="background-color: {{ module.bubble_color.color }}; opacity: {{ module.bubble_color.opacity / 100 }};width: {{ module.width_height }}px;height:{{ module.width_height }}px;"></div>
+  </div>
+  </div>
+
+  

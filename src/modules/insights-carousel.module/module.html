@@ -1,0 +1,79 @@
+<!-- module html  -->
+{{ require_css("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css") }}
+{{ require_js("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js", "head") }}
+
+{% set nav_bg_color = "bg-v-purple" %}
+{% set nav_arrow_color = "white" %}
+
+{% if module.nav_color == "yellow"  %}
+  {% set nav_bg_color = "bg-v-yellow" %}
+  {% set nav_arrow_color = "#2F2F35" %}
+
+{% endif %}
+
+
+
+
+<div class="bg-[#FAF9FD] rounded-xl shadow-lg relative z-10">
+  <div class="pt-12 px-6">
+    <h2 class="text-center m-0">
+      {{ module.header }}
+    </h2>
+  </div>
+  <div class="insights-swiper">
+    <div class="swiper-wrapper ">
+      {% for item in module.slide %}
+      <div class="swiper-slide py-6 lg:py-12 px-12 md:px-20">
+        <div class="flex flex-wrap ">
+          <div class="w-full md:w-1/4 lg:w-1/5 px-6 mb-6 md:mb-0">
+            {% if item.image.src %}
+            
+              {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+              <img class="w-full shadow-md" src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} >
+            {% endif %}
+          </div>
+          <div class="w-full md:w-3/4 lg:w-4/5 px-6">
+            <div class=" insights-carousel-text">
+              {{ item.text }}
+            </div>
+          
+          </div>
+        
+        </div>
+      </div>
+      {% endfor %}
+      
+      <div class="absolute z-10 top-0 bottom-0 right-2 md:right-3 flex justify-center items-center">
+        <div class="{{nav_bg_color}} w-[50px] md:w-[60px] h-[50px] md:h-[60px] rounded-full flex justify-center items-center cursor-pointer hover:bg-opacity-80  btn-next">
+          <svg class="w-[30px] md:w-[50px]" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3481_37946)">
+            <path d="M9.71122 26.736L9.71123 26.1942L9.71123 26.736H33.8927L25.784 34.8447C25.1329 35.4958 25.1329 36.5225 25.784 37.1735C26.3707 37.7602 27.4465 37.8398 28.1128 37.1735L39.0509 26.2355C39.3708 25.9156 39.5025 25.4716 39.5025 25.0711C39.5025 24.6706 39.3708 24.2266 39.0509 23.9067L28.1128 12.9686C27.4694 12.3252 26.4591 12.3176 25.8071 12.9459C25.4466 13.2419 25.2981 13.6837 25.2897 14.0788C25.2811 14.4834 25.416 14.9295 25.7351 15.2486L33.8927 23.4061L9.71123 23.4061C8.82601 23.4061 8.04629 24.1859 8.04629 25.0711L8.58647 25.0711L8.04629 25.0711C8.0463 25.5703 8.30484 25.9447 8.59564 26.2355C8.85002 26.4899 9.22386 26.736 9.71122 26.736Z" fill="{{nav_arrow_color}}" stroke="{{nav_arrow_color}}" stroke-width="1.08366"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_3481_37946">
+            <rect width="35.3571" height="35.3571" fill="{{nav_arrow_color}}" transform="translate(25.0723 0.0698242) rotate(45)"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+        </div>
+      </div>
+
+      <div class="absolute z-10 top-0 bottom-0 left-2 md:left-3 flex justify-center items-center">
+        <div class="{{nav_bg_color}} w-[50px] md:w-[60px] h-[50px] md:h-[60px] rounded-full flex justify-center items-center cursor-pointer hover:bg-opacity-80  btn-prev">
+          <svg class="rotate-180 w-[30px] md:w-[50px]" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3481_37946)">
+            <path d="M9.71122 26.736L9.71123 26.1942L9.71123 26.736H33.8927L25.784 34.8447C25.1329 35.4958 25.1329 36.5225 25.784 37.1735C26.3707 37.7602 27.4465 37.8398 28.1128 37.1735L39.0509 26.2355C39.3708 25.9156 39.5025 25.4716 39.5025 25.0711C39.5025 24.6706 39.3708 24.2266 39.0509 23.9067L28.1128 12.9686C27.4694 12.3252 26.4591 12.3176 25.8071 12.9459C25.4466 13.2419 25.2981 13.6837 25.2897 14.0788C25.2811 14.4834 25.416 14.9295 25.7351 15.2486L33.8927 23.4061L9.71123 23.4061C8.82601 23.4061 8.04629 24.1859 8.04629 25.0711L8.58647 25.0711L8.04629 25.0711C8.0463 25.5703 8.30484 25.9447 8.59564 26.2355C8.85002 26.4899 9.22386 26.736 9.71122 26.736Z" fill="{{nav_arrow_color}}" stroke="{{nav_arrow_color}}" stroke-width="1.08366"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_3481_37946">
+            <rect width="35.3571" height="35.3571" fill="{{nav_arrow_color}}" transform="translate(25.0723 0.0698242) rotate(45)"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+[
+  {
+   "type": "number",
+   "id": "71f9c960-ae11-ed43-4033-b72aef6474cd",
+   "display": "text",
+   "step": 1,
+   "label": "Number",
+   "name": "number",
+   "max": 100,
+   "min": 1,
+   "help_text": "Number to be used for the donut chart",
+   "default": 89
+  },
+  {
+   "type": "color",
+   "id": "a36b031c-eb2e-4ce1-8055-6acc4ca3d788",
+   "default": {
+    "color": "#553EB0",
+    "opacity": 100
+   },
+   "label": "Color",
+   "name": "color"
+  }
+ ]

@@ -12,10 +12,12 @@
 
     h1 {
         @apply text-[32px] leading-[42px] md:text-[46px] md:leading-[56px] text-[#2F2F35] font-bold;
+        letter-spacing: -1.84px;
       }
       
       h2 {
-      @apply text-[32px] leading-[42px] text-[#2F2F35] font-normal;
+      @apply text-[32px] leading-[42px] text-[#2F2F35] font-medium;
+      letter-spacing: -1.28px;
       }
 }
 @tailwind components;

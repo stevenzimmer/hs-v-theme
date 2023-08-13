@@ -1,6 +1,10 @@
 <!--
     templateType: global_partial
-    label: Page Header
+    label: Transparent Global Header
     isAvailableForNewContent: false
 -->
-Nav Transparent Nav
+<div class="absolute top-0 left-0 right-0 w-full py-12">
+    <div class="container">
+        {% module "header_logo" path="@hubspot/logo", link="/" label="Header logo", img={src= "https://8975772.fs1.hubspotusercontent-na1.net/hubfs/8975772/TvScientific_September2021/image/tv-s-logo-green-rgb.png", width=176, override_inherited_src=true, alt="TV Scientific Logo" } %}
+    </div>
+</div>
